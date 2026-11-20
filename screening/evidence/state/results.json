@@ -1,0 +1,154 @@
+{
+  "method": "Direct calls into unchanged default/layout module, not full analysis or GUI",
+  "passed": 11,
+  "failed": 10,
+  "cases": [
+    {
+      "id": "S-layout-width-closure",
+      "expected": 8.4,
+      "actual": 8.4,
+      "status": "PASS",
+      "related_issue": null
+    },
+    {
+      "id": "S-minimum-girders",
+      "expected": true,
+      "actual": true,
+      "status": "PASS",
+      "related_issue": null
+    },
+    {
+      "id": "S-preserve-typical_section.deck_thickness",
+      "expected": 300.0,
+      "actual": 250.0,
+      "status": "FAIL",
+      "related_issue": 71
+    },
+    {
+      "id": "S-preserve-typical_section.wearing_course.thickness",
+      "expected": 80.0,
+      "actual": 50.0,
+      "status": "FAIL",
+      "related_issue": 71
+    },
+    {
+      "id": "S-preserve-material.girder.e",
+      "expected": 210.0,
+      "actual": 210.0,
+      "status": "PASS",
+      "related_issue": null
+    },
+    {
+      "id": "S-preserve-material.girder.fy",
+      "expected": 355.0,
+      "actual": 355.0,
+      "status": "PASS",
+      "related_issue": null
+    },
+    {
+      "id": "S-preserve-material.girder.density",
+      "expected": 80.0,
+      "actual": 80.0,
+      "status": "PASS",
+      "related_issue": null
+    },
+    {
+      "id": "S-preserve-material.deck.fck",
+      "expected": 45.0,
+      "actual": 45.0,
+      "status": "PASS",
+      "related_issue": null
+    },
+    {
+      "id": "S-preserve-material.deck.density",
+      "expected": 24.0,
+      "actual": 24.0,
+      "status": "PASS",
+      "related_issue": null
+    },
+    {
+      "id": "S-span-25-G1-end",
+      "expected": 25.0,
+      "actual": 20.0,
+      "status": "FAIL",
+      "related_issue": 125
+    },
+    {
+      "id": "S-span-25-G2-end",
+      "expected": 25.0,
+      "actual": 20.0,
+      "status": "FAIL",
+      "related_issue": 125
+    },
+    {
+      "id": "S-span-25-G3-end",
+      "expected": 25.0,
+      "actual": 20.0,
+      "status": "FAIL",
+      "related_issue": 125
+    },
+    {
+      "id": "S-span-25-G4-end",
+      "expected": 25.0,
+      "actual": 20.0,
+      "status": "FAIL",
+      "related_issue": 125
+    },
+    {
+      "id": "S-span-30-G1-end",
+      "expected": 30.0,
+      "actual": 20.0,
+      "status": "FAIL",
+      "related_issue": 125
+    },
+    {
+      "id": "S-span-30-G2-end",
+      "expected": 30.0,
+      "actual": 20.0,
+      "status": "FAIL",
+      "related_issue": 125
+    },
+    {
+      "id": "S-span-30-G3-end",
+      "expected": 30.0,
+      "actual": 20.0,
+      "status": "FAIL",
+      "related_issue": 125
+    },
+    {
+      "id": "S-span-30-G4-end",
+      "expected": 30.0,
+      "actual": 20.0,
+      "status": "FAIL",
+      "related_issue": 125
+    },
+    {
+      "id": "S-remove-inactive-girder_details",
+      "expected": [],
+      "actual": [],
+      "status": "PASS",
+      "related_issue": null
+    },
+    {
+      "id": "S-remove-inactive-stiffener_details",
+      "expected": [],
+      "actual": [],
+      "status": "PASS",
+      "related_issue": null
+    },
+    {
+      "id": "S-remove-inactive-cross_bracing_details",
+      "expected": [],
+      "actual": [],
+      "status": "PASS",
+      "related_issue": null
+    },
+    {
+      "id": "S-remove-inactive-end_diaphragm_details",
+      "expected": [],
+      "actual": [],
+      "status": "PASS",
+      "related_issue": null
+    }
+  ]
+}

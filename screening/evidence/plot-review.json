@@ -1,0 +1,17 @@
+{
+  "cases": [
+    "D02-custom20",
+    "D03-custom25",
+    "D04-custom30"
+  ],
+  "plots_reviewed": 12,
+  "observations": [
+    "Nonblank diagrams generated for all three spans",
+    "Grillage span axes change with 20/25/30 m inputs",
+    "Labels overlap and are crowded in exports"
+  ],
+  "not_verified": [
+    "Independent structural correctness",
+    "Desktop CAD appearance"
+  ]
+}

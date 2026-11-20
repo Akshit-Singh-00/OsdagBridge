@@ -1,0 +1,65 @@
+--- a/src/osdagbridge/core/bridge_types/plate_girder/validator.py
++++ b/src/osdagbridge/core/bridge_types/plate_girder/validator.py
+@@ -3,7 +3,7 @@
+ Validates Basic and Additional Inputs
+ """
+ 
+-from math import isclose, floor, ceil
++from math import isclose, floor, ceil, isfinite
+ 
+ from osdagbridge.core.utils.codes.keyfile import *
+ from osdagbridge.core.utils.codes.irc5_2015 import IRC5_2015
+@@ -80,6 +80,12 @@
+         Per-field validation for custom material properties (steel and concrete/deck).
+         Returns (corrected_value, message) on error, None if valid.
+         """
++
++        # All three steel member categories share the same property ranges.
++        for prefix in ("material.cross_bracing.", "material.end_diaphragm."):
++            if key.startswith(prefix):
++                canonical = "material.girder." + key[len(prefix):]
++                return self.validate_material_inputs(canonical, {canonical: inputs.get(key)})
+ 
+         # ── Weight Density (kN/m³) ──────────────────────────────────────────────
+         if key == KEY_MATERIAL_GIRDER_DENSITY:
+@@ -1093,12 +1099,13 @@
+ 
+     def _to_float(self, value):
+         try:
+-            return float(value)
+-        except (TypeError, ValueError):
++            number = float(value)
++            return number if isfinite(number) else None
++        except (TypeError, ValueError, OverflowError):
+             return None
+ 
+     def _to_int(self, value):
+-        try:
+-            return int(value)
+-        except (TypeError, ValueError):
++        number = self._to_float(value)
++        if number is None or not number.is_integer():
+             return None
++        return int(number)
+--- a/src/osdagbridge/core/utils/osi_validator.py
++++ b/src/osdagbridge/core/utils/osi_validator.py
+@@ -156,6 +156,19 @@
+                 continue
+             self._run(self._bridge_validator.validate_additional_inputs, key, flat, result)
+ 
++        # OSI imports must apply the same material ranges as interactive editing.
++        steel_fields = {"fy", "fu", "e", "g", "poisson", "thermal", "density"}
++        deck_fields = {"fck", "fctm", "ecm", "thermal", "density"}
++        for key, value in flat.items():
++            parts = key.split(".")
++            if len(parts) != 3 or parts[0] != "material" or self._is_missing(value):
++                continue
++            member, prop = parts[1:]
++            is_steel = member in {"girder", "cross_bracing", "end_diaphragm"} and prop in steel_fields
++            is_deck = member == "deck" and prop in deck_fields
++            if is_steel or is_deck:
++                self._run(self._bridge_validator.validate_material_inputs, key, flat, result)
++
+         result.is_valid = len(result.errors) == 0
+         return result
+ 

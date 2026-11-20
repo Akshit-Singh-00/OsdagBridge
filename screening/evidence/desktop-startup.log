@@ -1,0 +1,37 @@
+####### 3D rendering pipe initialisation #####
+Display3d class initialization starting ...
+Aspect_DisplayConnection created.
+OpenGl_GraphicDriver created.
+V3d_Viewer created.
+AIS_InteractiveContext created.
+V3d_View created
+Graphic3d_Camera created
+Graphic3d_StructureManager created
+WNT window created.
+Display3d class successfully initialized.
+#########################################
+OpenGl information:
+  GLvendor: Intel
+  GLdevice: Intel(R) RaptorLake-S Mobile Graphics Controller
+  GLversion: 4.6.0 - Build 32.0.101.7088
+  GLSLversion: 4.60 - Build 32.0.101.7088
+  Max texture size: 16384
+  Max FBO dump size: 4096x16384
+  Max combined texture units: 192
+  Max MSAA samples: 16
+  Viewport: 125x38
+  Window buffer: RGB8 ALPHA8 DEPTH24 STENCIL8
+  ResolutionRatio: 1
+  FBO buffer: GL_SRGB8_ALPHA8 GL_DEPTH24_STENCIL8
+[DEBUG] Bridge Layout Sizing Result:
+  overall_width = 8.4 m
+  no_of_girders = 4
+  girder_spacing = 2.1 m
+  deck_overhang = 1.05 m
+@@: Loading segments for G1 with key=member_properties.girder_details.segment_table.G1, segments=[{'id': 'G1M1', 'start': 0.0, 'end': 20.0}]
+[MEMBER_ID_LOAD] G1.M1
+[DEBUG] Bridge Layout Sizing Result:
+  overall_width = 8.4 m
+  no_of_girders = 4
+  girder_spacing = 2.1 m
+  deck_overhang = 1.05 m

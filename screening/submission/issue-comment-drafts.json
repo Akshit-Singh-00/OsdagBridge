@@ -1,0 +1,30 @@
+{
+  "status": "draft_not_posted",
+  "comments": [
+    {
+      "issue": 71,
+      "url": "https://github.com/Nidhikhare12/OsdagBridge/issues/71",
+      "body": "Additional function-level reproduction on Windows / Python 3.12.5, dev d74f56d: with span 20 m, carriageway 7.5 m, zero skew, Optimized, a 300 mm deck and 80 mm wearing course become 250 and 50 after solve_extend_basic_input_dict. Exact before/after inputs and the runner are included in the local evidence bundle. This is not a GUI run. Suggested repair: distinguish default insertion from derived recomputation and serialization; preserve validated user overrides."
+    },
+    {
+      "issue": 168,
+      "url": "https://github.com/Nidhikhare12/OsdagBridge/issues/168",
+      "body": "Additional direct-function reproduction on Windows / Python 3.12.5, dev d74f56d: successive layout expansions at 20, 25 and 30 m keep all four girder segment ends at 20 m. Geometry span changes correctly. No full design execution is claimed. Suggested repair: track auto-generated segments and refresh them on span changes, while validating and preserving intentional custom multi-segment layouts."
+    },
+    {
+      "issue": 129,
+      "url": "https://github.com/Nidhikhare12/OsdagBridge/issues/129",
+      "body": "Reproduced with negative and excessive cross-bracing/end-diaphragm yield strengths. A separate proposal aliases these steel property validators to the girder rules, rejects non-finite/fractional numeric inputs, and invokes material validation for present OSI material fields. The local 72-case validation matrix changes from 46 pass / 26 fail to 72 pass / 0 fail. Original source restored after testing. No GUI or structural-analysis claim."
+    },
+    {
+      "issue": 42,
+      "url": "https://github.com/Nidhikhare12/OsdagBridge/issues/42",
+      "body": "Reproduced on Windows 11 / Python 3.12.13 / dev d74f56d using the unchanged source and actual OpenSeesPy solver. Default E 350A, M40, span 20 m, carriageway 7.5 m, four girders, zero skew, Optimized, Bhopal (Bairagarh): the run reaches _run_dcr_checks then raises ValueError because Gs is not set for E 350A. Exact input, partial output and traceback are retained in D01-baseline20. Three subsequent custom-material designs at 20/25/30 m complete on the same backend object. No desktop reproduction is claimed."
+    },
+    {
+      "issue": 20,
+      "url": "https://github.com/Nidhikhare12/OsdagBridge/issues/20",
+      "body": "Reproduced material construction on Windows / dev d74f56d in three completed custom-material runs (20/25/30 m). material.girder.density=80 kN/m3 becomes steel_prop.rho=78500 N/m3, expected 80000. E=210 GPa, fy=355 MPa and fu=510 MPa propagate correctly. _build_material_props ignores the custom density sub-key when the DB lookup is missing. Suggested repair: validate and convert the custom density field before falling back to 78500. Exact inputs and material-checks.json files are retained. This is backend evidence, not a desktop test."
+    }
+  ]
+}

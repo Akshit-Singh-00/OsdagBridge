@@ -1,0 +1,1063 @@
+{
+  "executed_at_utc": "2026-11-20T10:41:33.208974+00:00",
+  "python": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "commit": "d74f56dd7f22925fb8148cabf5740ed8d1e39ff3",
+  "method": "Direct calls into unchanged upstream validator modules; no GUI actions",
+  "passed": 72,
+  "failed": 0,
+  "cases": [
+    {
+      "id": "V-span-basic-lower",
+      "route": "basic",
+      "key": "geometry.span",
+      "value": "20",
+      "expected_valid": true,
+      "related_issues": [],
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-osi-lower",
+      "route": "osi",
+      "key": "geometry.span",
+      "value": "20",
+      "expected_valid": true,
+      "related_issues": [],
+      "actual": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-basic-upper",
+      "route": "basic",
+      "key": "geometry.span",
+      "value": "45",
+      "expected_valid": true,
+      "related_issues": [],
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-osi-upper",
+      "route": "osi",
+      "key": "geometry.span",
+      "value": "45",
+      "expected_valid": true,
+      "related_issues": [],
+      "actual": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-basic-ordinary",
+      "route": "basic",
+      "key": "geometry.span",
+      "value": "25",
+      "expected_valid": true,
+      "related_issues": [],
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-osi-ordinary",
+      "route": "osi",
+      "key": "geometry.span",
+      "value": "25",
+      "expected_valid": true,
+      "related_issues": [],
+      "actual": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-basic-numeric_string",
+      "route": "basic",
+      "key": "geometry.span",
+      "value": "25",
+      "expected_valid": true,
+      "related_issues": [],
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-osi-numeric_string",
+      "route": "osi",
+      "key": "geometry.span",
+      "value": "25",
+      "expected_valid": true,
+      "related_issues": [],
+      "actual": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-basic-below",
+      "route": "basic",
+      "key": "geometry.span",
+      "value": "19.9",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": [
+        20.0,
+        "Span must be between 20.0 m and 45.0 m (software limitation)."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-osi-below",
+      "route": "osi",
+      "key": "geometry.span",
+      "value": "19.9",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "geometry.span: Span must be between 20.0 m and 45.0 m (software limitation)."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-basic-above",
+      "route": "basic",
+      "key": "geometry.span",
+      "value": "45.1",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": [
+        45.0,
+        "Span must be between 20.0 m and 45.0 m (software limitation)."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-osi-above",
+      "route": "osi",
+      "key": "geometry.span",
+      "value": "45.1",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "geometry.span: Span must be between 20.0 m and 45.0 m (software limitation)."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-basic-zero",
+      "route": "basic",
+      "key": "geometry.span",
+      "value": "0",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": [
+        20.0,
+        "Span must be between 20.0 m and 45.0 m (software limitation)."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-osi-zero",
+      "route": "osi",
+      "key": "geometry.span",
+      "value": "0",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "geometry.span: Span must be between 20.0 m and 45.0 m (software limitation)."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-basic-negative",
+      "route": "basic",
+      "key": "geometry.span",
+      "value": "-1",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": [
+        20.0,
+        "Span must be between 20.0 m and 45.0 m (software limitation)."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-osi-negative",
+      "route": "osi",
+      "key": "geometry.span",
+      "value": "-1",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "geometry.span: Span must be between 20.0 m and 45.0 m (software limitation)."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-basic-nonnumeric",
+      "route": "basic",
+      "key": "geometry.span",
+      "value": "abc",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": [
+        20.0,
+        "Span must be a numeric value."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-osi-nonnumeric",
+      "route": "osi",
+      "key": "geometry.span",
+      "value": "abc",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "geometry.span: Span must be a numeric value."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-basic-blank",
+      "route": "basic",
+      "key": "geometry.span",
+      "value": "",
+      "expected_valid": false,
+      "related_issues": [
+        67
+      ],
+      "actual": [
+        20.0,
+        "Span must be a numeric value."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-osi-blank",
+      "route": "osi",
+      "key": "geometry.span",
+      "value": "",
+      "expected_valid": true,
+      "related_issues": [
+        67
+      ],
+      "actual": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-basic-nan",
+      "route": "basic",
+      "key": "geometry.span",
+      "value": "nan",
+      "expected_valid": false,
+      "related_issues": [
+        88
+      ],
+      "actual": [
+        20.0,
+        "Span must be a numeric value."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-osi-nan",
+      "route": "osi",
+      "key": "geometry.span",
+      "value": "nan",
+      "expected_valid": false,
+      "related_issues": [
+        88
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "geometry.span: Span must be a numeric value."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-basic-inf",
+      "route": "basic",
+      "key": "geometry.span",
+      "value": "inf",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": [
+        20.0,
+        "Span must be a numeric value."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-span-osi-inf",
+      "route": "osi",
+      "key": "geometry.span",
+      "value": "inf",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "geometry.span: Span must be a numeric value."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material-girder-ordinary",
+      "route": "material",
+      "key": "material.girder.fy",
+      "value": "350",
+      "expected_valid": true,
+      "related_issues": [],
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material-girder-ordinary",
+      "route": "osi",
+      "key": "material.girder.fy",
+      "value": "350",
+      "expected_valid": true,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material-girder-negative",
+      "route": "material",
+      "key": "material.girder.fy",
+      "value": "-10",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": [
+        100.0,
+        "Yield Strength, Fy must be between 100.0 and 1200.0 MPa."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material-girder-negative",
+      "route": "osi",
+      "key": "material.girder.fy",
+      "value": "-10",
+      "expected_valid": false,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "material.girder.fy: Yield Strength, Fy must be between 100.0 and 1200.0 MPa."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material-girder-above",
+      "route": "material",
+      "key": "material.girder.fy",
+      "value": "1500",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": [
+        1200.0,
+        "Yield Strength, Fy must be between 100.0 and 1200.0 MPa."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material-girder-above",
+      "route": "osi",
+      "key": "material.girder.fy",
+      "value": "1500",
+      "expected_valid": false,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "material.girder.fy: Yield Strength, Fy must be between 100.0 and 1200.0 MPa."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material-girder-nan",
+      "route": "material",
+      "key": "material.girder.fy",
+      "value": "nan",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": [
+        100.0,
+        "Yield Strength, Fy must be a numeric value."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material-girder-nan",
+      "route": "osi",
+      "key": "material.girder.fy",
+      "value": "nan",
+      "expected_valid": false,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "material.girder.fy: Yield Strength, Fy must be a numeric value."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material-cross_bracing-ordinary",
+      "route": "material",
+      "key": "material.cross_bracing.fy",
+      "value": "350",
+      "expected_valid": true,
+      "related_issues": [
+        129
+      ],
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material-cross_bracing-ordinary",
+      "route": "osi",
+      "key": "material.cross_bracing.fy",
+      "value": "350",
+      "expected_valid": true,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material-cross_bracing-negative",
+      "route": "material",
+      "key": "material.cross_bracing.fy",
+      "value": "-10",
+      "expected_valid": false,
+      "related_issues": [
+        129
+      ],
+      "actual": [
+        100.0,
+        "Yield Strength, Fy must be between 100.0 and 1200.0 MPa."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material-cross_bracing-negative",
+      "route": "osi",
+      "key": "material.cross_bracing.fy",
+      "value": "-10",
+      "expected_valid": false,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "material.cross_bracing.fy: Yield Strength, Fy must be between 100.0 and 1200.0 MPa."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material-cross_bracing-above",
+      "route": "material",
+      "key": "material.cross_bracing.fy",
+      "value": "1500",
+      "expected_valid": false,
+      "related_issues": [
+        129
+      ],
+      "actual": [
+        1200.0,
+        "Yield Strength, Fy must be between 100.0 and 1200.0 MPa."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material-cross_bracing-above",
+      "route": "osi",
+      "key": "material.cross_bracing.fy",
+      "value": "1500",
+      "expected_valid": false,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "material.cross_bracing.fy: Yield Strength, Fy must be between 100.0 and 1200.0 MPa."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material-cross_bracing-nan",
+      "route": "material",
+      "key": "material.cross_bracing.fy",
+      "value": "nan",
+      "expected_valid": false,
+      "related_issues": [
+        129
+      ],
+      "actual": [
+        100.0,
+        "Yield Strength, Fy must be a numeric value."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material-cross_bracing-nan",
+      "route": "osi",
+      "key": "material.cross_bracing.fy",
+      "value": "nan",
+      "expected_valid": false,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "material.cross_bracing.fy: Yield Strength, Fy must be a numeric value."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material-end_diaphragm-ordinary",
+      "route": "material",
+      "key": "material.end_diaphragm.fy",
+      "value": "350",
+      "expected_valid": true,
+      "related_issues": [
+        129
+      ],
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material-end_diaphragm-ordinary",
+      "route": "osi",
+      "key": "material.end_diaphragm.fy",
+      "value": "350",
+      "expected_valid": true,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material-end_diaphragm-negative",
+      "route": "material",
+      "key": "material.end_diaphragm.fy",
+      "value": "-10",
+      "expected_valid": false,
+      "related_issues": [
+        129
+      ],
+      "actual": [
+        100.0,
+        "Yield Strength, Fy must be between 100.0 and 1200.0 MPa."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material-end_diaphragm-negative",
+      "route": "osi",
+      "key": "material.end_diaphragm.fy",
+      "value": "-10",
+      "expected_valid": false,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "material.end_diaphragm.fy: Yield Strength, Fy must be between 100.0 and 1200.0 MPa."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material-end_diaphragm-above",
+      "route": "material",
+      "key": "material.end_diaphragm.fy",
+      "value": "1500",
+      "expected_valid": false,
+      "related_issues": [
+        129
+      ],
+      "actual": [
+        1200.0,
+        "Yield Strength, Fy must be between 100.0 and 1200.0 MPa."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material-end_diaphragm-above",
+      "route": "osi",
+      "key": "material.end_diaphragm.fy",
+      "value": "1500",
+      "expected_valid": false,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "material.end_diaphragm.fy: Yield Strength, Fy must be between 100.0 and 1200.0 MPa."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material-end_diaphragm-nan",
+      "route": "material",
+      "key": "material.end_diaphragm.fy",
+      "value": "nan",
+      "expected_valid": false,
+      "related_issues": [
+        129
+      ],
+      "actual": [
+        100.0,
+        "Yield Strength, Fy must be a numeric value."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material-end_diaphragm-nan",
+      "route": "osi",
+      "key": "material.end_diaphragm.fy",
+      "value": "nan",
+      "expected_valid": false,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "material.end_diaphragm.fy: Yield Strength, Fy must be a numeric value."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material.deck.fck-ordinary",
+      "route": "material",
+      "key": "material.deck.fck",
+      "value": "40",
+      "expected_valid": true,
+      "related_issues": [],
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material.deck.fck-ordinary",
+      "route": "osi",
+      "key": "material.deck.fck",
+      "value": "40",
+      "expected_valid": true,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material.deck.fck-invalid",
+      "route": "material",
+      "key": "material.deck.fck",
+      "value": "-1",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": [
+        10.0,
+        "Characteristic Compressive Strength, fck must be between 10.0 and 80.0 MPa."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material.deck.fck-invalid",
+      "route": "osi",
+      "key": "material.deck.fck",
+      "value": "-1",
+      "expected_valid": false,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "material.deck.fck: Characteristic Compressive Strength, fck must be between 10.0 and 80.0 MPa."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material.deck.density-ordinary",
+      "route": "material",
+      "key": "material.deck.density",
+      "value": "24",
+      "expected_valid": true,
+      "related_issues": [],
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material.deck.density-ordinary",
+      "route": "osi",
+      "key": "material.deck.density",
+      "value": "24",
+      "expected_valid": true,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material.deck.density-invalid",
+      "route": "material",
+      "key": "material.deck.density",
+      "value": "100",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": [
+        28.0,
+        "Weight Density must be between 18.0 and 28.0 kN/m\u00b3."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material.deck.density-invalid",
+      "route": "osi",
+      "key": "material.deck.density",
+      "value": "100",
+      "expected_valid": false,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "material.deck.density: Weight Density must be between 18.0 and 28.0 kN/m\u00b3."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material.deck.ecm-ordinary",
+      "route": "material",
+      "key": "material.deck.ecm",
+      "value": "35",
+      "expected_valid": true,
+      "related_issues": [],
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material.deck.ecm-ordinary",
+      "route": "osi",
+      "key": "material.deck.ecm",
+      "value": "35",
+      "expected_valid": true,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material.deck.ecm-invalid",
+      "route": "material",
+      "key": "material.deck.ecm",
+      "value": "1",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": [
+        15.0,
+        "Secant Modulus of Elasticity, Ecm must be between 15.0 and 50.0 GPa."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material.deck.ecm-invalid",
+      "route": "osi",
+      "key": "material.deck.ecm",
+      "value": "1",
+      "expected_valid": false,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "material.deck.ecm: Secant Modulus of Elasticity, Ecm must be between 15.0 and 50.0 GPa."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material.girder.poisson-ordinary",
+      "route": "material",
+      "key": "material.girder.poisson",
+      "value": "0.3",
+      "expected_valid": true,
+      "related_issues": [],
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material.girder.poisson-ordinary",
+      "route": "osi",
+      "key": "material.girder.poisson",
+      "value": "0.3",
+      "expected_valid": true,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material.girder.poisson-invalid",
+      "route": "material",
+      "key": "material.girder.poisson",
+      "value": "0.8",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": [
+        0.5,
+        "Poisson's Ratio must be between 0.0 and 0.5."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material.girder.poisson-invalid",
+      "route": "osi",
+      "key": "material.girder.poisson",
+      "value": "0.8",
+      "expected_valid": false,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "material.girder.poisson: Poisson's Ratio must be between 0.0 and 0.5."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material.girder.density-ordinary",
+      "route": "material",
+      "key": "material.girder.density",
+      "value": "78.5",
+      "expected_valid": true,
+      "related_issues": [],
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material.girder.density-ordinary",
+      "route": "osi",
+      "key": "material.girder.density",
+      "value": "78.5",
+      "expected_valid": true,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": true,
+        "errors": [],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-material.girder.density-invalid",
+      "route": "material",
+      "key": "material.girder.density",
+      "value": "1",
+      "expected_valid": false,
+      "related_issues": [],
+      "actual": [
+        50.0,
+        "Weight Density must be between 50.0 and 120.0 kN/m\u00b3."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-osi-material.girder.density-invalid",
+      "route": "osi",
+      "key": "material.girder.density",
+      "value": "1",
+      "expected_valid": false,
+      "related_issues": [
+        96
+      ],
+      "actual": {
+        "valid": false,
+        "errors": [
+          "material.girder.density: Weight Density must be between 50.0 and 120.0 kN/m\u00b3."
+        ],
+        "warnings": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "V-girders-inf",
+      "route": "additional",
+      "key": "typical_section.no_of_girders",
+      "value": "inf",
+      "expected_valid": false,
+      "related_issues": [
+        130
+      ],
+      "actual": [
+        2,
+        "No. of girders must be an integer value."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-girders--inf",
+      "route": "additional",
+      "key": "typical_section.no_of_girders",
+      "value": "-inf",
+      "expected_valid": false,
+      "related_issues": [
+        130
+      ],
+      "actual": [
+        2,
+        "No. of girders must be an integer value."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-girders-2.5",
+      "route": "additional",
+      "key": "typical_section.no_of_girders",
+      "value": "2.5",
+      "expected_valid": false,
+      "related_issues": [
+        130
+      ],
+      "actual": [
+        2,
+        "No. of girders must be an integer value."
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V-girders-0",
+      "route": "additional",
+      "key": "typical_section.no_of_girders",
+      "value": "0",
+      "expected_valid": false,
+      "related_issues": [
+        130
+      ],
+      "actual": [
+        2,
+        "No. of girders is outside the practical range allowed in the software."
+      ],
+      "status": "PASS"
+    }
+  ]
+}

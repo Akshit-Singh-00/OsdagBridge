@@ -1,0 +1,7 @@
+# Task-local Micromamba configuration; use a recognized YAML extension.
+mirrored_channels:
+  conda-forge:
+    - https://prefix.dev/conda-forge
+download_threads: 3
+remote_connect_timeout_secs: 30
+remote_max_retries: 2

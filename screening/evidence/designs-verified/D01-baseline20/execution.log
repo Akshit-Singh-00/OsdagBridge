@@ -1,0 +1,217 @@
+[DEBUG] Bridge Layout Sizing Result:
+  overall_width = 8.4 m
+  no_of_girders = 4
+  girder_spacing = 2.1 m
+  deck_overhang = 1.05 m
+Bridge width from layout: 8.5 m
+Self weight line load @ z=1.050 m: 1223.97 N/m (A=0.01559 m²)
+Self weight line load @ z=3.183 m: 1223.97 N/m (A=0.01559 m²)
+Self weight line load @ z=5.317 m: 1223.97 N/m (A=0.01559 m²)
+Self weight line load @ z=7.450 m: 1223.97 N/m (A=0.01559 m²)
+Deck slab load magnitude: 6250.00 N/m²
+Wearing course load magnitude: 1200.00 N/m²
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:607: UserWarning: No footpath component in layout; skipping footpath load creation
+  warnings.warn("No footpath component in layout; skipping footpath load creation")
+Crash barrier line load magnitude: 6540.00 N/m
+[Crash barrier left] line load: start(x=0.000, z=0.250)  end(x=20.000, z=0.250)
+[Crash barrier right] line load: start(x=0.000, z=8.250)  end(x=20.000, z=8.250)
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:771: UserWarning: No railing component in layout; skipping railing load creation
+  warnings.warn("No railing component in layout; skipping railing load creation")
+Median line load magnitude: 4000.00 N/m
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:854: UserWarning: No median component in layout; skipping median load creation
+  warnings.warn("No median component in layout; skipping median load creation")
+Wind loads (IRC:6-2017): Pz=463.7 N/m²  FT=10.14 kN  FT/m=0.507 kN/m  FL=14.9168 N/m²  FV=695.55 N/m²
+Seismic inputs: DL=1364.4 kN  Governing LL=0.0 kN
+Seismic loads (IRC:6-2017 Cl.218): Z=0.1  Ah=0.1400  Av=0.0933
+  Feq_X=191.02 kN  Feq_Z=191.02 kN  Feq_Y=127.35 kN
+Governing LL: Case2 1xClass70R  (max |Mz_i| = 631.15 kNm)
+ULS Basic combinations:
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_1: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+  Created: BASIC_1: 1.35DL + 1.75DW + 1.5LL + 0.9WL       DL=1.35(adding)  Surf=1.75  live_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_2: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+  Created: BASIC_2: 1.35DL + 1.75DW + 1.15LL + 1.5WL      DL=1.35(adding)  Surf=1.75  wind_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_3: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+  Created: BASIC_3: 1.35DL + 1.75DW + 1.15LL + 0.9WL      DL=1.35(adding)  Surf=1.75  thermal_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_4: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+  Created: BASIC_4: 1.0DL + 1.0DW + 1.5LL + 0.9WL         DL=1.0(relieving)  Surf=1.0  live_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_5: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+  Created: BASIC_5: 1.0DL + 1.0DW + 1.15LL + 1.5WL        DL=1.0(relieving)  Surf=1.0  wind_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_6: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+  Created: BASIC_6: 1.0DL + 1.0DW + 1.15LL + 0.9WL        DL=1.0(relieving)  Surf=1.0  thermal_load leading
+
+ULS Accidental combinations:
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_1: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+  Created: ACCIDENTAL_1: 1.0DL + 1.0DW + 0.75LL           DL=1.0  vehicle_collision(no lc)  live_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_2: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+  Created: ACCIDENTAL_2: 1.0DL + 1.0DW + 0.75LL           DL=1.0  barge_impact(no lc)  live_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_3: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+  Created: ACCIDENTAL_3: 1.0DL + 1.0DW + 0.75LL           DL=1.0  floating_bodies(no lc)  live_load leading
+
+ULS Seismic combinations:
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_1: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+  Created: SEISMIC_1: 1.35DL + 1.75DW + 0.2LL + 1.5EL     DL=1.35(adding)  EL=1.5(service)
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_2: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+  Created: SEISMIC_2: 1.35DL + 1.75DW + 0.2LL + 0.75EL    DL=1.35(adding)  EL=0.75(construction)
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_3: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+  Created: SEISMIC_3: 1.0DL + 1.0DW + 0.2LL + 1.5EL       DL=1.0(relieving)  EL=1.5(service)
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_4: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+  Created: SEISMIC_4: 1.0DL + 1.0DW + 0.2LL + 0.75EL      DL=1.0(relieving)  EL=0.75(construction)
+
+Total ULS combinations created: 13
+SLS Rare combinations:
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_1: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+  Created: SLS_RARE_1: 1.0DL + 1.2DW + 1.0LL + 0.6WL      DL=1.0  Surf=1.2(adding)  live_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_2: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+  Created: SLS_RARE_2: 1.0DL + 1.2DW + 0.75LL + 1.0WL     DL=1.0  Surf=1.2(adding)  wind_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_3: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+  Created: SLS_RARE_3: 1.0DL + 1.2DW + 0.75LL + 0.6WL     DL=1.0  Surf=1.2(adding)  thermal_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_4: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+  Created: SLS_RARE_4: 1.0DL + 1.0DW + 1.0LL + 0.6WL      DL=1.0  Surf=1.0(relieving)  live_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_5: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+  Created: SLS_RARE_5: 1.0DL + 1.0DW + 0.75LL + 1.0WL     DL=1.0  Surf=1.0(relieving)  wind_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_6: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+  Created: SLS_RARE_6: 1.0DL + 1.0DW + 0.75LL + 0.6WL     DL=1.0  Surf=1.0(relieving)  thermal_load leading
+
+SLS Frequent combinations:
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_1: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+  Created: SLS_FREQUENT_1: 1.0DL + 1.2DW + 0.75LL + 0.5WL  DL=1.0  Surf=1.2(adding)  live_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_2: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+  Created: SLS_FREQUENT_2: 1.0DL + 1.2DW + 0.2LL + 0.6WL  DL=1.0  Surf=1.2(adding)  wind_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_3: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+  Created: SLS_FREQUENT_3: 1.0DL + 1.2DW + 0.2LL + 0.5WL  DL=1.0  Surf=1.2(adding)  thermal_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_4: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+  Created: SLS_FREQUENT_4: 1.0DL + 1.0DW + 0.75LL + 0.5WL  DL=1.0  Surf=1.0(relieving)  live_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_5: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+  Created: SLS_FREQUENT_5: 1.0DL + 1.0DW + 0.2LL + 0.6WL  DL=1.0  Surf=1.0(relieving)  wind_load leading
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_6: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+  Created: SLS_FREQUENT_6: 1.0DL + 1.0DW + 0.2LL + 0.5WL  DL=1.0  Surf=1.0(relieving)  thermal_load leading
+
+SLS Quasi-permanent combinations:
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_QP_1: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+  Created: SLS_QP_1: 1.0DL + 1.2DW                        DL=1.0  Surf=1.2(adding)  TL=0.5
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_QP_2: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+  Created: SLS_QP_2: 1.0DL + 1.0DW                        DL=1.0  Surf=1.0(relieving)  TL=0.5
+
+Total SLS combinations created: 14
+Envelope ULS (worst signed magnitude) over 13 combinations: peak |Mz_i|=1141.82 kNm  peak |dy|=65.47 mm
+Envelope SLS (worst signed magnitude) over 14 combinations: peak |Mz_i|=1092.87 kNm  peak |dy|=62.57 mm
+
+------------------------------------------------------------
+  PLATE GIRDER BRIDGE - DESIGN SUMMARY
+------------------------------------------------------------
+  Span                  : 20.0 m
+  Overall width         : 8.400 m
+  No. of girders        : 4
+  Girder spacing        : 2100.0 mm
+  Deck overhang         : 1050.0 mm
+
+------------------------------------------------------------
+  GIRDER G1 CROSS-SECTION (mm) / PROPERTIES (SI)
+------------------------------------------------------------
+  Total depth      D    : 1120.0
+  Web depth        d_w  : 1092.0
+  Web thickness    t_w  : 8.0
+  Top flange width B_ft : 340.0
+  Top flange thk   T_ft : 16.0
+  Bot flange width B_fb : 340.0
+  Bot flange thk   T_fb : 16.0
+  Area   A  : 0.015592 m^2
+  I_z       : 0.003537 m^4
+  I_y       : 0.000093 m^4
+  I_t (J)   : 0.000001 m^3
+------------------------------------------------------------
+------------------------------------------------------------
+  GIRDER G2 CROSS-SECTION (mm) / PROPERTIES (SI)
+------------------------------------------------------------
+  Total depth      D    : 1120.0
+  Web depth        d_w  : 1092.0
+  Web thickness    t_w  : 8.0
+  Top flange width B_ft : 340.0
+  Top flange thk   T_ft : 16.0
+  Bot flange width B_fb : 340.0
+  Bot flange thk   T_fb : 16.0
+  Area   A  : 0.015592 m^2
+  I_z       : 0.003537 m^4
+  I_y       : 0.000093 m^4
+  I_t (J)   : 0.000001 m^3
+------------------------------------------------------------
+------------------------------------------------------------
+  GIRDER G3 CROSS-SECTION (mm) / PROPERTIES (SI)
+------------------------------------------------------------
+  Total depth      D    : 1120.0
+  Web depth        d_w  : 1092.0
+  Web thickness    t_w  : 8.0
+  Top flange width B_ft : 340.0
+  Top flange thk   T_ft : 16.0
+  Bot flange width B_fb : 340.0
+  Bot flange thk   T_fb : 16.0
+  Area   A  : 0.015592 m^2
+  I_z       : 0.003537 m^4
+  I_y       : 0.000093 m^4
+  I_t (J)   : 0.000001 m^3
+------------------------------------------------------------
+------------------------------------------------------------
+  GIRDER G4 CROSS-SECTION (mm) / PROPERTIES (SI)
+------------------------------------------------------------
+  Total depth      D    : 1120.0
+  Web depth        d_w  : 1092.0
+  Web thickness    t_w  : 8.0
+  Top flange width B_ft : 340.0
+  Top flange thk   T_ft : 16.0
+  Bot flange width B_fb : 340.0
+  Bot flange thk   T_fb : 16.0
+  Area   A  : 0.015592 m^2
+  I_z       : 0.003537 m^4
+  I_y       : 0.000093 m^4
+  I_t (J)   : 0.000001 m^3
+------------------------------------------------------------
+============================================================
+  IRC 22:2015 DESIGN CHECK PIPELINE
+============================================================
+
+[Step 1] Loading bridge configuration ...
+Traceback (most recent call last):
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\tests\run_designs.py", line 122, in main
+    bridge.design()
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py", line 757, in design
+    self._run_stage("5", self._run_dcr_checks, dataset)
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py", line 595, in _run_stage
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\plategirderbridge.py", line 2297, in _run_dcr_checks
+    _, engine, design_results = run_design_check(
+                                ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\designer.py", line 3235, in run_design_check
+    config = BridgeConfig.from_plate_girder_bridge(plate_girder_bridge)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\designer.py", line 311, in from_plate_girder_bridge
+    raise ValueError(
+ValueError: Gs (shear modulus) is not set for grade 'E 350A'. Populate it in the material database before running the design check.
+

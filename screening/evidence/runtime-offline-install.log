@@ -1,0 +1,677 @@
+Transaction
+
+  Prefix: D:\Fossee-runtime\env
+
+  Updating specs:
+
+   - python_abi==3.12=9_cp312
+   - ca-certificates==2026.10.23=h4c7d964_0
+   - tzdata==2026e=h5d301ff_0
+   - font-ttf-dejavu-sans-mono==2.37=hab24e00_0
+   - font-ttf-inconsolata==3.0=h77eed37_0
+   - font-ttf-source-code-pro==2.38=h77eed37_0
+   - font-ttf-ubuntu==0.83=h77eed37_4
+   - fonts-conda-forge==1=hc364b38_1
+   - fonts-conda-ecosystem==1=0
+   - ucrt==10.0.26100.0=h57928b3_0
+   - llvm-openmp==23.1.6=ha52be66_0
+   - libwinpthread==12.0.0.r688.g6b2176247.1=h57928b3_0
+   - libboost-headers==1.88.0=h57928b3_7
+   - eigen-abi==5.0.1.100=hc11354d_3
+   - eigen==5.0.1=h5112557_3
+   - utfcpp==5.0.0=h57928b3_0
+   - nlohmann_json==3.12.0=h5112557_2
+   - vcomp14==14.51.36247=h1c3f1cb_44
+   - libgomp==16.2.0=h8ee18e1_7
+   - vc14_runtime==14.51.36247=hb06f545_44
+   - _openmp_mutex==4.5=20_gnu
+   - vs2015_runtime==14.51.36247=hda273ae_44
+   - vc==14.5=hda273ae_44
+   - libgcc==16.2.0=h110b43a_7
+   - graphite2==1.3.15=h5112557_1
+   - x264==1!164.3095=pl5321h71a6e3e_3
+   - libffi==3.5.2=h3d046cb_0
+   - geos==3.14.1=h62f7316_0
+   - freeglut==3.2.2=hac47afa_4
+   - libusb==1.0.30=h6a83c73_1
+   - spirv-tools==2026.4=h49e36cd_2
+   - libopus==1.6.1=h6a83c73_1
+   - openh264==2.6.0=h1eab103_2
+   - x265==3.5=h3ee6617_4
+   - lame==3.100=hcfcfb64_1003
+   - jxrlib==1.1=hcfcfb64_3
+   - fribidi==1.0.18=hfd05255_0
+   - libogg==1.3.5=h2466b09_1
+   - jsoncpp==1.9.6=hda1637e_1
+   - cli11==2.7.2=h5112557_1
+   - dav1d==1.2.1=hcfcfb64_0
+   - svt-av1==3.1.2=hac47afa_0
+   - aom==3.9.1=he0c23c2_0
+   - rapidjson==1.1.0.post20250205=h5112557_0
+   - snappy==1.3.1=h89e5941_1
+   - pixman==0.46.4=h5112557_3
+   - libaec==1.1.8=h78347af_1
+   - libhwy==1.4.0=h2419aca_2
+   - pugixml==1.15=h372dad0_0
+   - fmt==11.2.0=h1d4551f_0
+   - yaml==0.2.5=h6a83c73_3
+   - libbrotlicommon==1.2.1=hf02afa3_1
+   - uriparser==0.9.8=h5a68840_0
+   - lz4-c==1.10.0=h6a83c73_2
+   - lzo==2.10=h6a83c73_1003
+   - libdeflate==1.25=h1a1d4e4_1
+   - muparser==2.3.5=h5112557_1
+   - libexpat==2.9.0=hac47afa_0
+   - xerces-c==3.3.0=hac47afa_3
+   - lerc==4.3.0=hd936e49_0
+   - libiconv==1.18=hc1393d2_3
+   - libwebp-base==1.6.0=h4d5522a_1
+   - tk==8.6.13=h967ab96_4
+   - bzip2==1.0.8=h0ad9c76_10
+   - libsqlite==3.54.1=hf5d6505_101
+   - libzlib==1.3.2=hfd05255_3
+   - libvulkan-loader==1.4.357.0=h477610d_2
+   - double-conversion==3.3.1=he0c23c2_0
+   - liblzma==5.8.3=hfd05255_1
+   - zlib-ng==2.3.3=h0261ad2_1
+   - libjpeg-turbo==3.2.1=hfd05255_0
+   - qhull==2020.2=h47c9fd8_6
+   - openssl==3.6.5=hf411b9b_0
+   - icu==75.1=he0c23c2_0
+   - gmp==6.3.0=hbc858fe_3
+   - librttopo==1.1.0=haa95264_21
+   - glslang==16.6.0=h8fa7867_0
+   - libvorbis==1.3.7=h5112557_2
+   - libtheora==1.1.1=hc70643c_1006
+   - libbrotlienc==1.2.1=he2a975b_1
+   - libbrotlidec==1.2.1=h84f9c24_1
+   - libintl==0.22.5=h5728263_4
+   - sqlite==3.54.1=hdb435a2_101
+   - imath==3.2.3=h1608b31_1
+   - libkml==1.3.0=h68a222c_1023
+   - libpng==1.6.59=hdc8cecf_0
+   - zstd==1.5.7=h534d264_7
+   - zlib==1.3.2=hfd05255_3
+   - pcre2==10.46=h3402e2f_0
+   - sdl3==3.4.20=h5112557_2
+   - jasper==4.2.9=h1339676_2
+   - hdf4==4.2.15=h5557f11_7
+   - libzip==1.12.1=h0ac0a2c_0
+   - libssh2==1.11.1=h734d217_2
+   - python==3.12.13=h0159041_0_cpython
+   - krb5==1.21.3=hdf4eb48_0
+   - libxml2-16==2.15.1=h06f855e_0
+   - mpfr==4.2.2=hb393127_1
+   - shaderc==2025.5=h8fa7867_1
+   - brotli-bin==1.2.1=hd477307_1
+   - libjxl==0.11.2=h932607e_1
+   - gl2ps==1.4.2=h26c196c_2
+   - libfreetype6==2.14.3=hdbac1cb_2
+   - minizip==4.2.2=hdc83b33_1
+   - libboost==1.88.0=h9dfe17d_7
+   - blosc==1.21.7=h12952c6_1
+   - libtiff==4.7.2=h8f73337_1
+   - libglib==2.86.2=hd9c3897_0
+   - sdl2==2.32.56=h5112557_1
+   - libcurl==8.18.0=h43ecb02_0
+   - libxml2==2.15.1=ha29bfb0_0
+   - brotli==1.2.1=hc8c2fe1_1
+   - libfreetype==2.14.3=h57928b3_2
+   - freexl==2.0.0=h037be62_3
+   - libboost-devel==1.88.0=h1c1089f_7
+   - openjph==0.32.0=hf13a347_1
+   - openjpeg==2.5.4=h90fa87c_2
+   - lcms2==2.20=hf2c6c5f_0
+   - gdk-pixbuf==2.44.4=h1f5b9c4_0
+   - hdf5==1.14.6=nompi_hae35d4c_106
+   - proj==9.7.1=hd30e2cd_3
+   - libarchive==3.8.9=gpl_he24518a_100
+   - libhwloc==2.13.0=default_h049141e_1000
+   - libxml2-devel==2.15.1=ha29bfb0_0
+   - libxslt==1.1.43=h0fbe4c1_1
+   - libclang13==22.1.8=default_h2778606_7
+   - fontconfig==2.18.4=hbf4c354_0
+   - freetype==2.14.3=h57928b3_2
+   - cgal-cpp==6.1.2=h4086982_0
+   - openexr==3.5.3=h23de9c7_0
+   - libraw==0.22.3=h345c428_0
+   - libnetcdf==4.9.3=nompi_h3948bcf_104
+   - tbb==2023.1.0=hdcfe883_0
+   - libspatialite==5.1.0=gpl_h0cd62ae_119
+   - cairo==1.18.4=h5782bbf_0
+   - freeimage==3.18.0=h17567e8_27
+   - mkl==2026.1.0=hac47afa_235
+   - libgdal-core==3.11.5=h9732b15_0
+   - harfbuzz==12.2.0=h5f2951f_0
+   - occt==7.9.3=novtk_h1b358ef_103
+   - libblas==3.11.0=12_h8455456_mkl
+   - pango==1.56.4=h03d888a_0
+   - qt6-main==6.9.3=ha0de62e_1
+   - liblapack==3.11.0=12_hf9ab0e9_mkl
+   - libcblas==3.11.0=12_h2a3cdd5_mkl
+   - librsvg==2.60.0=hd5e4115_0
+   - ffmpeg==8.0.1=gpl_h74fd8f1_908
+   - setuptools==84.2.1=pyhe730653_0
+   - packaging==26.3=pyhc364b38_0
+   - wheel==0.48.0=pyhd8ed1ab_0
+   - pip==26.2.2=pyh8b19718_2
+   - idna==3.20=pyh5ded981_0
+   - aiohappyeyeballs==2.7.1=pyhd8ed1ab_0
+   - colorama==0.4.6=pyhd8ed1ab_1
+   - win32_setctime==1.2.1=pyhd8ed1ab_0
+   - zipp==4.1.2=pyh5ded981_0
+   - ordered-set==4.1.0=pyhd8ed1ab_1
+   - munkres==1.1.4=pyhd8ed1ab_1
+   - et_xmlfile==2.0.0=pyhd8ed1ab_1
+   - lark==1.3.1=pyhd8ed1ab_0
+   - python-tzdata==2026.6=pyh5ded981_0
+   - cycler==0.12.1=pyhcf101f3_2
+   - pyparsing==3.3.3=pyh5ded981_0
+   - click==8.5.1=pyh5ded981_0
+   - attrs==26.1.0=pyhcf101f3_0
+   - typing_extensions==4.16.0=pyhcf101f3_0
+   - loguru==0.8.0=pyh7428d3b_0
+   - importlib-metadata==10.0.0=pyh5ded981_0
+   - pylatex==1.4.2=pyhd8ed1ab_0
+   - python-dateutil==4.0.0=pyh5ded981_0
+   - svgwrite==1.4.3=pyhd8ed1ab_1
+   - cligj==0.7.2=pyhd8ed1ab_2
+   - click-plugins==1.1.1.2=pyhd8ed1ab_0
+   - typing-inspection==0.4.5=pyh5ded981_0
+   - typing-extensions==4.16.0=h69aa097_0
+   - markdown==3.11.3=pyh5ded981_0
+   - annotated-types==0.8.0=pyhd8ed1ab_0
+   - propcache==0.5.4=py312h05f76fc_3
+   - frozenlist==1.8.0=py312hfdf67e6_1
+   - multidict==7.2.1=py312h05f76fc_1
+   - msgpack-python==1.2.4=py312h78d62e6_1
+   - unicodedata2==18.0.0=py312he06e257_1
+   - pyyaml==6.0.3=py312hcc83f31_3
+   - kiwisolver==1.5.1=py312h78d62e6_4
+   - pillow==13.0.0=py312h7bb5964_1
+   - tornado==6.6.1=py312he5662c2_0
+   - numpy==2.5.5=py312ha3f287d_1
+   - pyside6==6.9.3=py312h0c8bdd4_2
+   - openpyxl==3.1.5=py312h83acffa_5
+   - pydantic-core==2.50.5=py312ha6491b7_0
+   - yarl==1.25.1=py312h05f76fc_1
+   - fonttools==4.68.0=py312h05f76fc_0
+   - pythonocc-core==7.9.3=novtk_hd7b45fb_103
+   - pandas==3.1.1=np2py312hea30aaf_0
+   - contourpy==1.4.0=py312h78d62e6_2
+   - shapely==2.2.0=py312hc709015_1
+   - scipy==1.18.1=py312hbeecc1a_4
+   - matplotlib-base==3.10.9=py312h0ebf65c_0
+   - ifcopenshell==0.8.5=py312h3621fc8_0
+   - fiona==1.10.1=py312h2d4285c_5
+   - matplotlib==3.10.9=py312h2e8e312_0
+   - osdag_latex_env==1.0.2=py313_0
+   - aiosignal==1.4.0=pyhd8ed1ab_0
+   - pydantic==2.14.4=pyh5ded981_0
+   - xarray==2026.9.0=pyh5ded981_0
+   - navcube==1.1.0=py_0
+   - aiohttp==3.14.5=py312h6fa65f5_1
+   - wslink==2.6.0=pyhd8ed1ab_0
+   - vtk-base==9.5.1=py312he6c4627_7
+   - smesh==9.9.0.0=h9ef9fcb_20
+   - osdag==2026.4.0.0=py_0
+
+
+  Package                                       Version  Build                  Channel                         Size
+----------------------------------------------------------------------------------------------------------------------
+  Install:
+----------------------------------------------------------------------------------------------------------------------
+
+  + _openmp_mutex                                   4.5  20_gnu                 D:/Fossee-runtime/downloads         
+  + aiohappyeyeballs                              2.7.1  pyhd8ed1ab_0           D:/Fossee-runtime/downloads         
+  + aiohttp                                      3.14.5  py312h6fa65f5_1        D:/Fossee-runtime/downloads         
+  + aiosignal                                     1.4.0  pyhd8ed1ab_0           D:/Fossee-runtime/downloads         
+  + annotated-types                               0.8.0  pyhd8ed1ab_0           D:/Fossee-runtime/downloads         
+  + aom                                           3.9.1  he0c23c2_0             D:/Fossee-runtime/downloads         
+  + attrs                                        26.1.0  pyhcf101f3_0           D:/Fossee-runtime/downloads         
+  + blosc                                        1.21.7  h12952c6_1             D:/Fossee-runtime/downloads         
+  + brotli                                        1.2.1  hc8c2fe1_1             D:/Fossee-runtime/downloads         
+  + brotli-bin                                    1.2.1  hd477307_1             D:/Fossee-runtime/downloads         
+  + bzip2                                         1.0.8  h0ad9c76_10            D:/Fossee-runtime/downloads         
+  + ca-certificates                          2026.10.23  h4c7d964_0             D:/Fossee-runtime/downloads         
+  + cairo                                        1.18.4  h5782bbf_0             D:/Fossee-runtime/downloads         
+  + cgal-cpp                                      6.1.2  h4086982_0             D:/Fossee-runtime/downloads         
+  + cli11                                         2.7.2  h5112557_1             D:/Fossee-runtime/downloads         
+  + click                                         8.5.1  pyh5ded981_0           D:/Fossee-runtime/downloads         
+  + click-plugins                               1.1.1.2  pyhd8ed1ab_0           D:/Fossee-runtime/downloads         
+  + cligj                                         0.7.2  pyhd8ed1ab_2           D:/Fossee-runtime/downloads         
+  + colorama                                      0.4.6  pyhd8ed1ab_1           D:/Fossee-runtime/downloads         
+  + contourpy                                     1.4.0  py312h78d62e6_2        D:/Fossee-runtime/downloads         
+  + cycler                                       0.12.1  pyhcf101f3_2           D:/Fossee-runtime/downloads         
+  + dav1d                                         1.2.1  hcfcfb64_0             D:/Fossee-runtime/downloads         
+  + double-conversion                             3.3.1  he0c23c2_0             D:/Fossee-runtime/downloads         
+  + eigen                                         5.0.1  h5112557_3             D:/Fossee-runtime/downloads         
+  + eigen-abi                                 5.0.1.100  hc11354d_3             D:/Fossee-runtime/downloads         
+  + et_xmlfile                                    2.0.0  pyhd8ed1ab_1           D:/Fossee-runtime/downloads         
+  + ffmpeg                                        8.0.1  gpl_h74fd8f1_908       D:/Fossee-runtime/downloads         
+  + fiona                                        1.10.1  py312h2d4285c_5        D:/Fossee-runtime/downloads         
+  + fmt                                          11.2.0  h1d4551f_0             D:/Fossee-runtime/downloads         
+  + font-ttf-dejavu-sans-mono                      2.37  hab24e00_0             D:/Fossee-runtime/downloads         
+  + font-ttf-inconsolata                          3.000  h77eed37_0             D:/Fossee-runtime/downloads         
+  + font-ttf-source-code-pro                      2.038  h77eed37_0             D:/Fossee-runtime/downloads         
+  + font-ttf-ubuntu                                0.83  h77eed37_4             D:/Fossee-runtime/downloads         
+  + fontconfig                                   2.18.4  hbf4c354_0             D:/Fossee-runtime/downloads         
+  + fonts-conda-ecosystem                             1  0                      D:/Fossee-runtime/downloads         
+  + fonts-conda-forge                                 1  hc364b38_1             D:/Fossee-runtime/downloads         
+  + fonttools                                    4.68.0  py312h05f76fc_0        D:/Fossee-runtime/downloads         
+  + freeglut                                      3.2.2  hac47afa_4             D:/Fossee-runtime/downloads         
+  + freeimage                                    3.18.0  h17567e8_27            D:/Fossee-runtime/downloads         
+  + freetype                                     2.14.3  h57928b3_2             D:/Fossee-runtime/downloads         
+  + freexl                                        2.0.0  h037be62_3             D:/Fossee-runtime/downloads         
+  + fribidi                                      1.0.18  hfd05255_0             D:/Fossee-runtime/downloads         
+  + frozenlist                                    1.8.0  py312hfdf67e6_1        D:/Fossee-runtime/downloads         
+  + gdk-pixbuf                                   2.44.4  h1f5b9c4_0             D:/Fossee-runtime/downloads         
+  + geos                                         3.14.1  h62f7316_0             D:/Fossee-runtime/downloads         
+  + gl2ps                                         1.4.2  h26c196c_2             D:/Fossee-runtime/downloads         
+  + glslang                                      16.6.0  h8fa7867_0             D:/Fossee-runtime/downloads         
+  + gmp                                           6.3.0  hbc858fe_3             D:/Fossee-runtime/downloads         
+  + graphite2                                    1.3.15  h5112557_1             D:/Fossee-runtime/downloads         
+  + harfbuzz                                     12.2.0  h5f2951f_0             D:/Fossee-runtime/downloads         
+  + hdf4                                         4.2.15  h5557f11_7             D:/Fossee-runtime/downloads         
+  + hdf5                                         1.14.6  nompi_hae35d4c_106     D:/Fossee-runtime/downloads         
+  + icu                                            75.1  he0c23c2_0             D:/Fossee-runtime/downloads         
+  + idna                                           3.20  pyh5ded981_0           D:/Fossee-runtime/downloads         
+  + ifcopenshell                                  0.8.5  py312h3621fc8_0        D:/Fossee-runtime/downloads         
+  + imath                                         3.2.3  h1608b31_1             D:/Fossee-runtime/downloads         
+  + importlib-metadata                           10.0.0  pyh5ded981_0           D:/Fossee-runtime/downloads         
+  + jasper                                        4.2.9  h1339676_2             D:/Fossee-runtime/downloads         
+  + jsoncpp                                       1.9.6  hda1637e_1             D:/Fossee-runtime/downloads         
+  + jxrlib                                          1.1  hcfcfb64_3             D:/Fossee-runtime/downloads         
+  + kiwisolver                                    1.5.1  py312h78d62e6_4        D:/Fossee-runtime/downloads         
+  + krb5                                         1.21.3  hdf4eb48_0             D:/Fossee-runtime/downloads         
+  + lame                                          3.100  hcfcfb64_1003          D:/Fossee-runtime/downloads         
+  + lark                                          1.3.1  pyhd8ed1ab_0           D:/Fossee-runtime/downloads         
+  + lcms2                                          2.20  hf2c6c5f_0             D:/Fossee-runtime/downloads         
+  + lerc                                          4.3.0  hd936e49_0             D:/Fossee-runtime/downloads         
+  + libaec                                        1.1.8  h78347af_1             D:/Fossee-runtime/downloads         
+  + libarchive                                    3.8.9  gpl_he24518a_100       D:/Fossee-runtime/downloads         
+  + libblas                                      3.11.0  12_h8455456_mkl        D:/Fossee-runtime/downloads         
+  + libboost                                     1.88.0  h9dfe17d_7             D:/Fossee-runtime/downloads         
+  + libboost-devel                               1.88.0  h1c1089f_7             D:/Fossee-runtime/downloads         
+  + libboost-headers                             1.88.0  h57928b3_7             D:/Fossee-runtime/downloads         
+  + libbrotlicommon                               1.2.1  hf02afa3_1             D:/Fossee-runtime/downloads         
+  + libbrotlidec                                  1.2.1  h84f9c24_1             D:/Fossee-runtime/downloads         
+  + libbrotlienc                                  1.2.1  he2a975b_1             D:/Fossee-runtime/downloads         
+  + libcblas                                     3.11.0  12_h2a3cdd5_mkl        D:/Fossee-runtime/downloads         
+  + libclang13                                   22.1.8  default_h2778606_7     D:/Fossee-runtime/downloads         
+  + libcurl                                      8.18.0  h43ecb02_0             D:/Fossee-runtime/downloads         
+  + libdeflate                                     1.25  h1a1d4e4_1             D:/Fossee-runtime/downloads         
+  + libexpat                                      2.9.0  hac47afa_0             D:/Fossee-runtime/downloads         
+  + libffi                                        3.5.2  h3d046cb_0             D:/Fossee-runtime/downloads         
+  + libfreetype                                  2.14.3  h57928b3_2             D:/Fossee-runtime/downloads         
+  + libfreetype6                                 2.14.3  hdbac1cb_2             D:/Fossee-runtime/downloads         
+  + libgcc                                       16.2.0  h110b43a_7             D:/Fossee-runtime/downloads         
+  + libgdal-core                                 3.11.5  h9732b15_0             D:/Fossee-runtime/downloads         
+  + libglib                                      2.86.2  hd9c3897_0             D:/Fossee-runtime/downloads         
+  + libgomp                                      16.2.0  h8ee18e1_7             D:/Fossee-runtime/downloads         
+  + libhwloc                                     2.13.0  default_h049141e_1000  D:/Fossee-runtime/downloads         
+  + libhwy                                        1.4.0  h2419aca_2             D:/Fossee-runtime/downloads         
+  + libiconv                                       1.18  hc1393d2_3             D:/Fossee-runtime/downloads         
+  + libintl                                      0.22.5  h5728263_4             D:/Fossee-runtime/downloads         
+  + libjpeg-turbo                                 3.2.1  hfd05255_0             D:/Fossee-runtime/downloads         
+  + libjxl                                       0.11.2  h932607e_1             D:/Fossee-runtime/downloads         
+  + libkml                                        1.3.0  h68a222c_1023          D:/Fossee-runtime/downloads         
+  + liblapack                                    3.11.0  12_hf9ab0e9_mkl        D:/Fossee-runtime/downloads         
+  + liblzma                                       5.8.3  hfd05255_1             D:/Fossee-runtime/downloads         
+  + libnetcdf                                     4.9.3  nompi_h3948bcf_104     D:/Fossee-runtime/downloads         
+  + libogg                                        1.3.5  h2466b09_1             D:/Fossee-runtime/downloads         
+  + libopus                                       1.6.1  h6a83c73_1             D:/Fossee-runtime/downloads         
+  + libpng                                       1.6.59  hdc8cecf_0             D:/Fossee-runtime/downloads         
+  + libraw                                       0.22.3  h345c428_0             D:/Fossee-runtime/downloads         
+  + librsvg                                      2.60.0  hd5e4115_0             D:/Fossee-runtime/downloads         
+  + librttopo                                     1.1.0  haa95264_21            D:/Fossee-runtime/downloads         
+  + libspatialite                                 5.1.0  gpl_h0cd62ae_119       D:/Fossee-runtime/downloads         
+  + libsqlite                                    3.54.1  hf5d6505_101           D:/Fossee-runtime/downloads         
+  + libssh2                                      1.11.1  h734d217_2             D:/Fossee-runtime/downloads         
+  + libtheora                                     1.1.1  hc70643c_1006          D:/Fossee-runtime/downloads         
+  + libtiff                                       4.7.2  h8f73337_1             D:/Fossee-runtime/downloads         
+  + libusb                                       1.0.30  h6a83c73_1             D:/Fossee-runtime/downloads         
+  + libvorbis                                     1.3.7  h5112557_2             D:/Fossee-runtime/downloads         
+  + libvulkan-loader                          1.4.357.0  h477610d_2             D:/Fossee-runtime/downloads         
+  + libwebp-base                                  1.6.0  h4d5522a_1             D:/Fossee-runtime/downloads         
+  + libwinpthread              12.0.0.r688.g6b2176247.1  h57928b3_0             D:/Fossee-runtime/downloads         
+  + libxml2                                      2.15.1  ha29bfb0_0             D:/Fossee-runtime/downloads         
+  + libxml2-16                                   2.15.1  h06f855e_0             D:/Fossee-runtime/downloads         
+  + libxml2-devel                                2.15.1  ha29bfb0_0             D:/Fossee-runtime/downloads         
+  + libxslt                                      1.1.43  h0fbe4c1_1             D:/Fossee-runtime/downloads         
+  + libzip                                       1.12.1  h0ac0a2c_0             D:/Fossee-runtime/downloads         
+  + libzlib                                       1.3.2  hfd05255_3             D:/Fossee-runtime/downloads         
+  + llvm-openmp                                  23.1.6  ha52be66_0             D:/Fossee-runtime/downloads         
+  + loguru                                        0.8.0  pyh7428d3b_0           D:/Fossee-runtime/downloads         
+  + lz4-c                                        1.10.0  h6a83c73_2             D:/Fossee-runtime/downloads         
+  + lzo                                            2.10  h6a83c73_1003          D:/Fossee-runtime/downloads         
+  + markdown                                     3.11.3  pyh5ded981_0           D:/Fossee-runtime/downloads         
+  + matplotlib                                   3.10.9  py312h2e8e312_0        D:/Fossee-runtime/downloads         
+  + matplotlib-base                              3.10.9  py312h0ebf65c_0        D:/Fossee-runtime/downloads         
+  + minizip                                       4.2.2  hdc83b33_1             D:/Fossee-runtime/downloads         
+  + mkl                                        2026.1.0  hac47afa_235           D:/Fossee-runtime/downloads         
+  + mpfr                                          4.2.2  hb393127_1             D:/Fossee-runtime/downloads         
+  + msgpack-python                                1.2.4  py312h78d62e6_1        D:/Fossee-runtime/downloads         
+  + multidict                                     7.2.1  py312h05f76fc_1        D:/Fossee-runtime/downloads         
+  + munkres                                       1.1.4  pyhd8ed1ab_1           D:/Fossee-runtime/downloads         
+  + muparser                                      2.3.5  h5112557_1             D:/Fossee-runtime/downloads         
+  + navcube                                       1.1.0  py_0                   D:/Fossee-runtime/downloads         
+  + nlohmann_json                                3.12.0  h5112557_2             D:/Fossee-runtime/downloads         
+  + numpy                                         2.5.5  py312ha3f287d_1        D:/Fossee-runtime/downloads         
+  + occt                                          7.9.3  novtk_h1b358ef_103     D:/Fossee-runtime/downloads         
+  + openexr                                       3.5.3  h23de9c7_0             D:/Fossee-runtime/downloads         
+  + openh264                                      2.6.0  h1eab103_2             D:/Fossee-runtime/downloads         
+  + openjpeg                                      2.5.4  h90fa87c_2             D:/Fossee-runtime/downloads         
+  + openjph                                      0.32.0  hf13a347_1             D:/Fossee-runtime/downloads         
+  + openpyxl                                      3.1.5  py312h83acffa_5        D:/Fossee-runtime/downloads         
+  + openssl                                       3.6.5  hf411b9b_0             D:/Fossee-runtime/downloads         
+  + ordered-set                                   4.1.0  pyhd8ed1ab_1           D:/Fossee-runtime/downloads         
+  + osdag                                   2026.04.0.0  py_0                   D:/Fossee-runtime/downloads         
+  + osdag_latex_env                               1.0.2  py313_0                D:/Fossee-runtime/downloads         
+  + packaging                                      26.3  pyhc364b38_0           D:/Fossee-runtime/downloads         
+  + pandas                                        3.1.1  np2py312hea30aaf_0     D:/Fossee-runtime/downloads         
+  + pango                                        1.56.4  h03d888a_0             D:/Fossee-runtime/downloads         
+  + pcre2                                         10.46  h3402e2f_0             D:/Fossee-runtime/downloads         
+  + pillow                                       13.0.0  py312h7bb5964_1        D:/Fossee-runtime/downloads         
+  + pip                                          26.2.2  pyh8b19718_2           D:/Fossee-runtime/downloads         
+  + pixman                                       0.46.4  h5112557_3             D:/Fossee-runtime/downloads         
+  + proj                                          9.7.1  hd30e2cd_3             D:/Fossee-runtime/downloads         
+  + propcache                                     0.5.4  py312h05f76fc_3        D:/Fossee-runtime/downloads         
+  + pugixml                                        1.15  h372dad0_0             D:/Fossee-runtime/downloads         
+  + pydantic                                     2.14.4  pyh5ded981_0           D:/Fossee-runtime/downloads         
+  + pydantic-core                                2.50.5  py312ha6491b7_0        D:/Fossee-runtime/downloads         
+  + pylatex                                       1.4.2  pyhd8ed1ab_0           D:/Fossee-runtime/downloads         
+  + pyparsing                                     3.3.3  pyh5ded981_0           D:/Fossee-runtime/downloads         
+  + pyside6                                       6.9.3  py312h0c8bdd4_2        D:/Fossee-runtime/downloads         
+  + python                                      3.12.13  h0159041_0_cpython     D:/Fossee-runtime/downloads         
+  + python-dateutil                               4.0.0  pyh5ded981_0           D:/Fossee-runtime/downloads         
+  + python-tzdata                                2026.6  pyh5ded981_0           D:/Fossee-runtime/downloads         
+  + python_abi                                     3.12  9_cp312                D:/Fossee-runtime/downloads         
+  + pythonocc-core                                7.9.3  novtk_hd7b45fb_103     D:/Fossee-runtime/downloads         
+  + pyyaml                                        6.0.3  py312hcc83f31_3        D:/Fossee-runtime/downloads         
+  + qhull                                        2020.2  h47c9fd8_6             D:/Fossee-runtime/downloads         
+  + qt6-main                                      6.9.3  ha0de62e_1             D:/Fossee-runtime/downloads         
+  + rapidjson                        1.1.0.post20250205  h5112557_0             D:/Fossee-runtime/downloads         
+  + scipy                                        1.18.1  py312hbeecc1a_4        D:/Fossee-runtime/downloads         
+  + sdl2                                        2.32.56  h5112557_1             D:/Fossee-runtime/downloads         
+  + sdl3                                         3.4.20  h5112557_2             D:/Fossee-runtime/downloads         
+  + setuptools                                   84.2.1  pyhe730653_0           D:/Fossee-runtime/downloads         
+  + shaderc                                      2025.5  h8fa7867_1             D:/Fossee-runtime/downloads         
+  + shapely                                       2.2.0  py312hc709015_1        D:/Fossee-runtime/downloads         
+  + smesh                                       9.9.0.0  h9ef9fcb_20            D:/Fossee-runtime/downloads         
+  + snappy                                        1.3.1  h89e5941_1             D:/Fossee-runtime/downloads         
+  + spirv-tools                                  2026.4  h49e36cd_2             D:/Fossee-runtime/downloads         
+  + sqlite                                       3.54.1  hdb435a2_101           D:/Fossee-runtime/downloads         
+  + svgwrite                                      1.4.3  pyhd8ed1ab_1           D:/Fossee-runtime/downloads         
+  + svt-av1                                       3.1.2  hac47afa_0             D:/Fossee-runtime/downloads         
+  + tbb                                        2023.1.0  hdcfe883_0             D:/Fossee-runtime/downloads         
+  + tk                                           8.6.13  h967ab96_4             D:/Fossee-runtime/downloads         
+  + tornado                                       6.6.1  py312he5662c2_0        D:/Fossee-runtime/downloads         
+  + typing-extensions                            4.16.0  h69aa097_0             D:/Fossee-runtime/downloads         
+  + typing-inspection                             0.4.5  pyh5ded981_0           D:/Fossee-runtime/downloads         
+  + typing_extensions                            4.16.0  pyhcf101f3_0           D:/Fossee-runtime/downloads         
+  + tzdata                                        2026e  h5d301ff_0             D:/Fossee-runtime/downloads         
+  + ucrt                                   10.0.26100.0  h57928b3_0             D:/Fossee-runtime/downloads         
+  + unicodedata2                                 18.0.0  py312he06e257_1        D:/Fossee-runtime/downloads         
+  + uriparser                                     0.9.8  h5a68840_0             D:/Fossee-runtime/downloads         
+  + utfcpp                                        5.0.0  h57928b3_0             D:/Fossee-runtime/downloads         
+  + vc                                             14.5  hda273ae_44            D:/Fossee-runtime/downloads         
+  + vc14_runtime                            14.51.36247  hb06f545_44            D:/Fossee-runtime/downloads         
+  + vcomp14                                 14.51.36247  h1c3f1cb_44            D:/Fossee-runtime/downloads         
+warning  libmamba Security Warning: This transaction includes executing package scripts (pre/post-link/unlink) if present. These scripts can contain arbitrary code. Please ensure you trust the package sources.
+  + vs2015_runtime                          14.51.36247  hda273ae_44            D:/Fossee-runtime/downloads         
+  + vtk-base                                      9.5.1  py312he6c4627_7        D:/Fossee-runtime/downloads         
+  + wheel                                        0.48.0  pyhd8ed1ab_0           D:/Fossee-runtime/downloads         
+  + win32_setctime                                1.2.1  pyhd8ed1ab_0           D:/Fossee-runtime/downloads         
+  + wslink                                        2.6.0  pyhd8ed1ab_0           D:/Fossee-runtime/downloads         
+  + x264                                     1!164.3095  pl5321h71a6e3e_3       D:/Fossee-runtime/downloads         
+  + x265                                            3.5  h3ee6617_4             D:/Fossee-runtime/downloads         
+  + xarray                                     2026.9.0  pyh5ded981_0           D:/Fossee-runtime/downloads         
+  + xerces-c                                      3.3.0  hac47afa_3             D:/Fossee-runtime/downloads         
+  + yaml                                          0.2.5  h6a83c73_3             D:/Fossee-runtime/downloads         
+  + yarl                                         1.25.1  py312h05f76fc_1        D:/Fossee-runtime/downloads         
+  + zipp                                          4.1.2  pyh5ded981_0           D:/Fossee-runtime/downloads         
+  + zlib                                          1.3.2  hfd05255_3             D:/Fossee-runtime/downloads         
+  + zlib-ng                                       2.3.3  h0261ad2_1             D:/Fossee-runtime/downloads         
+  + zstd                                          1.5.7  h534d264_7             D:/Fossee-runtime/downloads         
+
+  Summary:
+
+  Install: 211 packages
+
+  Total download: 0 B
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+
+Transaction starting
+Linking python_abi-3.12-9_cp312
+Linking ca-certificates-2026.10.23-h4c7d964_0
+Linking tzdata-2026e-h5d301ff_0
+Linking font-ttf-dejavu-sans-mono-2.37-hab24e00_0
+Linking font-ttf-inconsolata-3.000-h77eed37_0
+Linking font-ttf-source-code-pro-2.038-h77eed37_0
+Linking font-ttf-ubuntu-0.83-h77eed37_4
+Linking fonts-conda-forge-1-hc364b38_1
+Linking fonts-conda-ecosystem-1-0
+Linking ucrt-10.0.26100.0-h57928b3_0
+Linking llvm-openmp-23.1.6-ha52be66_0
+Linking libwinpthread-12.0.0.r688.g6b2176247.1-h57928b3_0
+Linking libboost-headers-1.88.0-h57928b3_7
+Linking eigen-abi-5.0.1.100-hc11354d_3
+Linking eigen-5.0.1-h5112557_3
+Linking utfcpp-5.0.0-h57928b3_0
+Linking nlohmann_json-3.12.0-h5112557_2
+Linking vcomp14-14.51.36247-h1c3f1cb_44
+Linking libgomp-16.2.0-h8ee18e1_7
+Linking vc14_runtime-14.51.36247-hb06f545_44
+Linking _openmp_mutex-4.5-20_gnu
+Linking vs2015_runtime-14.51.36247-hda273ae_44
+Linking vc-14.5-hda273ae_44
+Linking libgcc-16.2.0-h110b43a_7
+Linking graphite2-1.3.15-h5112557_1
+Linking x264-1!164.3095-pl5321h71a6e3e_3
+Linking libffi-3.5.2-h3d046cb_0
+Linking geos-3.14.1-h62f7316_0
+Linking freeglut-3.2.2-hac47afa_4
+Linking libusb-1.0.30-h6a83c73_1
+Linking spirv-tools-2026.4-h49e36cd_2
+Linking libopus-1.6.1-h6a83c73_1
+Linking openh264-2.6.0-h1eab103_2
+Linking x265-3.5-h3ee6617_4
+Linking lame-3.100-hcfcfb64_1003
+Linking jxrlib-1.1-hcfcfb64_3
+Linking fribidi-1.0.18-hfd05255_0
+Linking libogg-1.3.5-h2466b09_1
+Linking jsoncpp-1.9.6-hda1637e_1
+Linking cli11-2.7.2-h5112557_1
+Linking dav1d-1.2.1-hcfcfb64_0
+Linking svt-av1-3.1.2-hac47afa_0
+Linking aom-3.9.1-he0c23c2_0
+Linking rapidjson-1.1.0.post20250205-h5112557_0
+Linking snappy-1.3.1-h89e5941_1
+Linking pixman-0.46.4-h5112557_3
+Linking libaec-1.1.8-h78347af_1
+Linking libhwy-1.4.0-h2419aca_2
+Linking pugixml-1.15-h372dad0_0
+Linking fmt-11.2.0-h1d4551f_0
+Linking yaml-0.2.5-h6a83c73_3
+Linking libbrotlicommon-1.2.1-hf02afa3_1
+Linking uriparser-0.9.8-h5a68840_0
+Linking lz4-c-1.10.0-h6a83c73_2
+Linking lzo-2.10-h6a83c73_1003
+Linking libdeflate-1.25-h1a1d4e4_1
+Linking muparser-2.3.5-h5112557_1
+Linking libexpat-2.9.0-hac47afa_0
+Linking xerces-c-3.3.0-hac47afa_3
+Linking lerc-4.3.0-hd936e49_0
+Linking libiconv-1.18-hc1393d2_3
+Linking libwebp-base-1.6.0-h4d5522a_1
+Linking tk-8.6.13-h967ab96_4
+Linking bzip2-1.0.8-h0ad9c76_10
+Linking libsqlite-3.54.1-hf5d6505_101
+Linking libzlib-1.3.2-hfd05255_3
+Linking libvulkan-loader-1.4.357.0-h477610d_2
+Linking double-conversion-3.3.1-he0c23c2_0
+Linking liblzma-5.8.3-hfd05255_1
+Linking zlib-ng-2.3.3-h0261ad2_1
+Linking libjpeg-turbo-3.2.1-hfd05255_0
+Linking qhull-2020.2-h47c9fd8_6
+Linking openssl-3.6.5-hf411b9b_0
+Linking icu-75.1-he0c23c2_0
+Linking gmp-6.3.0-hbc858fe_3
+Linking librttopo-1.1.0-haa95264_21
+Linking glslang-16.6.0-h8fa7867_0
+Linking libvorbis-1.3.7-h5112557_2
+Linking libtheora-1.1.1-hc70643c_1006
+Linking libbrotlienc-1.2.1-he2a975b_1
+Linking libbrotlidec-1.2.1-h84f9c24_1
+Linking libintl-0.22.5-h5728263_4
+Linking sqlite-3.54.1-hdb435a2_101
+Linking imath-3.2.3-h1608b31_1
+Linking libkml-1.3.0-h68a222c_1023
+Linking libpng-1.6.59-hdc8cecf_0
+Linking zstd-1.5.7-h534d264_7
+Linking zlib-1.3.2-hfd05255_3
+Linking pcre2-10.46-h3402e2f_0
+Linking sdl3-3.4.20-h5112557_2
+Linking jasper-4.2.9-h1339676_2
+Linking hdf4-4.2.15-h5557f11_7
+Linking libzip-1.12.1-h0ac0a2c_0
+Linking libssh2-1.11.1-h734d217_2
+Linking python-3.12.13-h0159041_0_cpython
+Linking krb5-1.21.3-hdf4eb48_0
+Linking libxml2-16-2.15.1-h06f855e_0
+Linking mpfr-4.2.2-hb393127_1
+Linking shaderc-2025.5-h8fa7867_1
+Linking brotli-bin-1.2.1-hd477307_1
+Linking libjxl-0.11.2-h932607e_1
+Linking gl2ps-1.4.2-h26c196c_2
+Linking libfreetype6-2.14.3-hdbac1cb_2
+Linking minizip-4.2.2-hdc83b33_1
+Linking libboost-1.88.0-h9dfe17d_7
+Linking blosc-1.21.7-h12952c6_1
+Linking libtiff-4.7.2-h8f73337_1
+Linking libglib-2.86.2-hd9c3897_0
+Linking sdl2-2.32.56-h5112557_1
+Linking libcurl-8.18.0-h43ecb02_0
+Linking libxml2-2.15.1-ha29bfb0_0
+Linking brotli-1.2.1-hc8c2fe1_1
+Linking libfreetype-2.14.3-h57928b3_2
+Linking freexl-2.0.0-h037be62_3
+Linking libboost-devel-1.88.0-h1c1089f_7
+Linking openjph-0.32.0-hf13a347_1
+Linking openjpeg-2.5.4-h90fa87c_2
+Linking lcms2-2.20-hf2c6c5f_0
+Linking gdk-pixbuf-2.44.4-h1f5b9c4_0
+warning  libmamba Executing post-link script for package 'gdk-pixbuf'.
+
+Linking hdf5-1.14.6-nompi_hae35d4c_106
+Linking proj-9.7.1-hd30e2cd_3
+Linking libarchive-3.8.9-gpl_he24518a_100
+Linking libhwloc-2.13.0-default_h049141e_1000
+warning  libmamba [libhwloc-2.13.0-default_h049141e_1000] The following files were already present in the environment:
+    - Library\README.txt
+Linking libxml2-devel-2.15.1-ha29bfb0_0
+Linking libxslt-1.1.43-h0fbe4c1_1
+Linking libclang13-22.1.8-default_h2778606_7
+Linking fontconfig-2.18.4-hbf4c354_0
+Linking freetype-2.14.3-h57928b3_2
+Linking cgal-cpp-6.1.2-h4086982_0
+Linking openexr-3.5.3-h23de9c7_0
+Linking libraw-0.22.3-h345c428_0
+Linking libnetcdf-4.9.3-nompi_h3948bcf_104
+Linking tbb-2023.1.0-hdcfe883_0
+Linking libspatialite-5.1.0-gpl_h0cd62ae_119
+Linking cairo-1.18.4-h5782bbf_0
+Linking freeimage-3.18.0-h17567e8_27
+Linking mkl-2026.1.0-hac47afa_235
+Linking libgdal-core-3.11.5-h9732b15_0
+Linking harfbuzz-12.2.0-h5f2951f_0
+Linking occt-7.9.3-novtk_h1b358ef_103
+Linking libblas-3.11.0-12_h8455456_mkl
+Linking pango-1.56.4-h03d888a_0
+Linking qt6-main-6.9.3-ha0de62e_1
+Linking liblapack-3.11.0-12_hf9ab0e9_mkl
+Linking libcblas-3.11.0-12_h2a3cdd5_mkl
+Linking librsvg-2.60.0-hd5e4115_0
+warning  libmamba Executing post-link script for package 'librsvg'.
+
+Linking ffmpeg-8.0.1-gpl_h74fd8f1_908
+Linking setuptools-84.2.1-pyhe730653_0
+Linking packaging-26.3-pyhc364b38_0
+Linking wheel-0.48.0-pyhd8ed1ab_0
+Linking pip-26.2.2-pyh8b19718_2
+Linking idna-3.20-pyh5ded981_0
+Linking aiohappyeyeballs-2.7.1-pyhd8ed1ab_0
+Linking colorama-0.4.6-pyhd8ed1ab_1
+Linking win32_setctime-1.2.1-pyhd8ed1ab_0
+Linking zipp-4.1.2-pyh5ded981_0
+Linking ordered-set-4.1.0-pyhd8ed1ab_1
+Linking munkres-1.1.4-pyhd8ed1ab_1
+Linking et_xmlfile-2.0.0-pyhd8ed1ab_1
+Linking lark-1.3.1-pyhd8ed1ab_0
+Linking python-tzdata-2026.6-pyh5ded981_0
+Linking cycler-0.12.1-pyhcf101f3_2
+Linking pyparsing-3.3.3-pyh5ded981_0
+Linking click-8.5.1-pyh5ded981_0
+Linking attrs-26.1.0-pyhcf101f3_0
+Linking typing_extensions-4.16.0-pyhcf101f3_0
+Linking loguru-0.8.0-pyh7428d3b_0
+Linking importlib-metadata-10.0.0-pyh5ded981_0
+Linking pylatex-1.4.2-pyhd8ed1ab_0
+Linking python-dateutil-4.0.0-pyh5ded981_0
+Linking svgwrite-1.4.3-pyhd8ed1ab_1
+Linking cligj-0.7.2-pyhd8ed1ab_2
+Linking click-plugins-1.1.1.2-pyhd8ed1ab_0
+Linking typing-inspection-0.4.5-pyh5ded981_0
+Linking typing-extensions-4.16.0-h69aa097_0
+Linking markdown-3.11.3-pyh5ded981_0
+Linking annotated-types-0.8.0-pyhd8ed1ab_0
+Linking propcache-0.5.4-py312h05f76fc_3
+Linking frozenlist-1.8.0-py312hfdf67e6_1
+Linking multidict-7.2.1-py312h05f76fc_1
+Linking msgpack-python-1.2.4-py312h78d62e6_1
+Linking unicodedata2-18.0.0-py312he06e257_1
+Linking pyyaml-6.0.3-py312hcc83f31_3
+Linking kiwisolver-1.5.1-py312h78d62e6_4
+Linking pillow-13.0.0-py312h7bb5964_1
+Linking tornado-6.6.1-py312he5662c2_0
+Linking numpy-2.5.5-py312ha3f287d_1
+Linking pyside6-6.9.3-py312h0c8bdd4_2
+Linking openpyxl-3.1.5-py312h83acffa_5
+Linking pydantic-core-2.50.5-py312ha6491b7_0
+Linking yarl-1.25.1-py312h05f76fc_1
+Linking fonttools-4.68.0-py312h05f76fc_0
+Linking pythonocc-core-7.9.3-novtk_hd7b45fb_103
+Linking pandas-3.1.1-np2py312hea30aaf_0
+Linking contourpy-1.4.0-py312h78d62e6_2
+Linking shapely-2.2.0-py312hc709015_1
+Linking scipy-1.18.1-py312hbeecc1a_4
+Linking matplotlib-base-3.10.9-py312h0ebf65c_0
+Linking ifcopenshell-0.8.5-py312h3621fc8_0
+Linking fiona-1.10.1-py312h2d4285c_5
+Linking matplotlib-3.10.9-py312h2e8e312_0
+Linking osdag_latex_env-1.0.2-py313_0
+Linking aiosignal-1.4.0-pyhd8ed1ab_0
+Linking pydantic-2.14.4-pyh5ded981_0
+Linking xarray-2026.9.0-pyh5ded981_0
+Linking navcube-1.1.0-py_0
+Linking aiohttp-3.14.5-py312h6fa65f5_1
+Linking wslink-2.6.0-pyhd8ed1ab_0
+Linking vtk-base-9.5.1-py312he6c4627_7
+Linking smesh-9.9.0.0-h9ef9fcb_20
+Linking osdag-2026.04.0.0-py_0
+
+Transaction finished
+
+
+To activate this environment, use:
+
+    micromamba activate D:\Fossee-runtime\env
+
+Or to execute a single command in this environment, use:
+
+    micromamba run -p D:\Fossee-runtime\env mycommand
+

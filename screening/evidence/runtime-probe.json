@@ -1,0 +1,64 @@
+{
+  "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:36:12) [MSC v.1944 64 bit (AMD64)]",
+  "prefix": "D:\\Fossee-runtime\\env",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "modules": {
+    "numpy": {
+      "status": "IMPORTED",
+      "version": "2.5.5"
+    },
+    "scipy": {
+      "status": "IMPORTED",
+      "version": "1.18.1"
+    },
+    "matplotlib": {
+      "status": "IMPORTED",
+      "version": "3.10.9"
+    },
+    "pandas": {
+      "status": "IMPORTED",
+      "version": "3.1.1"
+    },
+    "xarray": {
+      "status": "IMPORTED",
+      "version": "2026.9.0"
+    },
+    "yaml": {
+      "status": "IMPORTED",
+      "version": "6.0.3"
+    },
+    "PySide6": {
+      "status": "IMPORTED",
+      "version": "6.9.3"
+    },
+    "OCC.Core.BRep": {
+      "status": "IMPORTED",
+      "version": null
+    },
+    "osdag_core": {
+      "status": "IMPORTED",
+      "version": null
+    },
+    "openseespy.opensees": {
+      "status": "IMPORTED",
+      "version": null
+    },
+    "opsvis": {
+      "status": "IMPORTED",
+      "version": null
+    },
+    "navcube": {
+      "status": "IMPORTED",
+      "version": "1.1.0"
+    },
+    "ifcopenshell": {
+      "status": "IMPORTED",
+      "version": "0.8.5"
+    },
+    "fiona": {
+      "status": "IMPORTED",
+      "version": "1.10.1"
+    }
+  },
+  "ready": true
+}

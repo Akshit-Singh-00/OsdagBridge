@@ -1,0 +1,108 @@
+[
+  {
+    "id": "D01-baseline20",
+    "span_m": 20,
+    "custom_materials": false,
+    "started_at_utc": "2026-11-20T11:28:37.206735+00:00",
+    "method": "Same backend object; set_input followed by design; fresh expanded inputs each run",
+    "execution_status": "ERROR",
+    "exception": "Traceback (most recent call last):\n  File \"C:\\Users\\Dell\\OneDrive\\Documents\\ChatGPT\\Fossee\\tests\\run_designs.py\", line 122, in main\n    bridge.design()\n  File \"C:\\Users\\Dell\\OneDrive\\Documents\\ChatGPT\\Fossee\\OsdagBridge\\src\\osdagbridge\\core\\bridge_types\\plate_girder\\plategirderbridge.py\", line 757, in design\n    self._run_stage(\"5\", self._run_dcr_checks, dataset)\n  File \"C:\\Users\\Dell\\OneDrive\\Documents\\ChatGPT\\Fossee\\OsdagBridge\\src\\osdagbridge\\core\\bridge_types\\plate_girder\\plategirderbridge.py\", line 595, in _run_stage\n    result = func(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Dell\\OneDrive\\Documents\\ChatGPT\\Fossee\\OsdagBridge\\src\\osdagbridge\\core\\bridge_types\\plate_girder\\plategirderbridge.py\", line 2297, in _run_dcr_checks\n    _, engine, design_results = run_design_check(\n                                ^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Dell\\OneDrive\\Documents\\ChatGPT\\Fossee\\OsdagBridge\\src\\osdagbridge\\core\\bridge_types\\plate_girder\\designer.py\", line 3235, in run_design_check\n    config = BridgeConfig.from_plate_girder_bridge(plate_girder_bridge)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Dell\\OneDrive\\Documents\\ChatGPT\\Fossee\\OsdagBridge\\src\\osdagbridge\\core\\bridge_types\\plate_girder\\designer.py\", line 311, in from_plate_girder_bridge\n    raise ValueError(\nValueError: Gs (shear modulus) is not set for grade 'E 350A'. Populate it in the material database before running the design check.\n",
+    "elapsed_seconds": 35.42
+  },
+  {
+    "id": "D02-custom20",
+    "span_m": 20,
+    "custom_materials": true,
+    "started_at_utc": "2026-11-20T11:29:12.627151+00:00",
+    "method": "Same backend object; set_input followed by design; fresh expanded inputs each run",
+    "execution_status": "COMPLETED",
+    "utilization": {
+      "util.flexure": 24.58,
+      "util.shear": 33.32,
+      "util.interaction": 24.8,
+      "util.ltb": 20.46,
+      "util.long_trans_shear": 23.990000000000002,
+      "util.fatigue": 220.86,
+      "util.stress_limitation": 33.76,
+      "util.deflection_crack": 61.49
+    },
+    "input_span_matches_output": true,
+    "component_output_counts": {
+      "deck": 55,
+      "crossbracing": 3,
+      "end_diaphragm": 3
+    },
+    "grillage_plot": "GENERATED",
+    "structural_plots": {
+      "bending-moment": "GENERATED",
+      "shear-force": "GENERATED",
+      "deflection": "GENERATED"
+    },
+    "cad_construction": "GENERATED",
+    "elapsed_seconds": 89.33
+  },
+  {
+    "id": "D03-custom25",
+    "span_m": 25,
+    "custom_materials": true,
+    "started_at_utc": "2026-11-20T11:30:41.959073+00:00",
+    "method": "Same backend object; set_input followed by design; fresh expanded inputs each run",
+    "execution_status": "COMPLETED",
+    "utilization": {
+      "util.flexure": 23.06,
+      "util.shear": 53.290000000000006,
+      "util.interaction": 23.26,
+      "util.ltb": 18.83,
+      "util.long_trans_shear": 25.430000000000003,
+      "util.fatigue": 199.16,
+      "util.stress_limitation": 30.94,
+      "util.deflection_crack": 51.99
+    },
+    "input_span_matches_output": true,
+    "component_output_counts": {
+      "deck": 55,
+      "crossbracing": 3,
+      "end_diaphragm": 3
+    },
+    "grillage_plot": "GENERATED",
+    "structural_plots": {
+      "bending-moment": "GENERATED",
+      "shear-force": "GENERATED",
+      "deflection": "GENERATED"
+    },
+    "cad_construction": "GENERATED",
+    "elapsed_seconds": 106.31
+  },
+  {
+    "id": "D04-custom30",
+    "span_m": 30,
+    "custom_materials": true,
+    "started_at_utc": "2026-11-20T11:32:28.276089+00:00",
+    "method": "Same backend object; set_input followed by design; fresh expanded inputs each run",
+    "execution_status": "COMPLETED",
+    "utilization": {
+      "util.flexure": 19.02,
+      "util.shear": 39.910000000000004,
+      "util.interaction": 19.16,
+      "util.ltb": 21.790000000000003,
+      "util.long_trans_shear": 21.36,
+      "util.fatigue": 157.26,
+      "util.stress_limitation": 24.52,
+      "util.deflection_crack": 43.6
+    },
+    "input_span_matches_output": true,
+    "component_output_counts": {
+      "deck": 55,
+      "crossbracing": 3,
+      "end_diaphragm": 3
+    },
+    "grillage_plot": "GENERATED",
+    "structural_plots": {
+      "bending-moment": "GENERATED",
+      "shear-force": "GENERATED",
+      "deflection": "GENERATED"
+    },
+    "cad_construction": "GENERATED",
+    "elapsed_seconds": 88.36
+  }
+]

@@ -1,0 +1,17 @@
+⚠ Shard Index for osdag/noarch not available, falling back to flat repodata
+Using Flat Repodata for osdag/noarch                                                            ✔ Starting
+Using Flat Repodata for osdag/noarch                                                      ✔ Done (0.0 sec)
+⚠ Shard Index for osdag/win-64 not available, falling back to flat repodata
+Using Flat Repodata for osdag/win-64                                                            ✔ Starting
+Using Flat Repodata for osdag/win-64                                                      ✔ Done (0.0 sec)
+⚠ Shard Index for geompy/noarch not available, falling back to flat repodata
+Using Flat Repodata for geompy/noarch                                                           ✔ Starting
+Using Flat Repodata for geompy/noarch                                                     ✔ Done (0.0 sec)
+⚠ Shard Index for geompy/win-64 not available, falling back to flat repodata
+Using Flat Repodata for geompy/win-64                                                           ✔ Starting
+Using Flat Repodata for geompy/win-64                                                     ✔ Done (0.0 sec)
+Fetch Shard Index for conda-forge/noarch                                                        ⧖ Starting
+Fetch Shard Index for conda-forge/noarch                                                  ✔ Done (1.0 sec)
+Fetch Shard Index for conda-forge/win-64                                                        ⧖ Starting
+Fetch Shard Index for conda-forge/win-64                                                  ✔ Done (0.7 sec)
+Fetching and Parsing Packages' Shards                                                           ⧖ Starting

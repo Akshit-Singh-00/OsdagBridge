@@ -1,0 +1,89 @@
+{
+  "girders": {
+    "count": 12,
+    "non_null": 12,
+    "valid": 12
+  },
+  "girder_web": {
+    "count": 4,
+    "non_null": 4,
+    "valid": 4
+  },
+  "girder_flanges": {
+    "count": 8,
+    "non_null": 8,
+    "valid": 8
+  },
+  "girder_top_flanges": {
+    "count": 4,
+    "non_null": 4,
+    "valid": 4
+  },
+  "girder_bottom_flanges": {
+    "count": 4,
+    "non_null": 4,
+    "valid": 4
+  },
+  "stiffeners": {
+    "count": 1,
+    "non_null": 1,
+    "valid": 1
+  },
+  "intermediate_stiffeners": {
+    "count": 1,
+    "non_null": 1,
+    "valid": 1
+  },
+  "bearing_stiffeners": {
+    "count": 1,
+    "non_null": 1,
+    "valid": 1
+  },
+  "shear_studs": {
+    "count": 1,
+    "non_null": 1,
+    "valid": 1
+  },
+  "supports": {
+    "count": 14,
+    "non_null": 14,
+    "valid": 14
+  },
+  "supports_tri": {
+    "count": 14,
+    "non_null": 14,
+    "valid": 14
+  },
+  "supports_vertical": {
+    "count": 8,
+    "non_null": 8,
+    "valid": 8
+  },
+  "supports_wide_horiz": {
+    "count": 2,
+    "non_null": 2,
+    "valid": 2
+  },
+  "supports_long_horiz": {
+    "count": 4,
+    "non_null": 4,
+    "valid": 4
+  },
+  "cross_bracings": {
+    "count": 1,
+    "non_null": 1,
+    "valid": 1
+  },
+  "deck_textures": {
+    "count": 1,
+    "non_null": 1,
+    "valid": 1
+  },
+  "crash_barriers": {
+    "count": 2,
+    "non_null": 2,
+    "valid": 2
+  },
+  "total_deck_width_mm": 8400.0,
+  "input_overall_width_mm": 8400.0
+}

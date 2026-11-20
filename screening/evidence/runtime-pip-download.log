@@ -1,0 +1,17 @@
+Collecting openseespy
+  Downloading openseespy-3.8.0.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting openseespywin
+  Downloading openseespywin-3.8.0.0-py3-none-win_amd64.whl.metadata (1.2 kB)
+Collecting opsvis
+  Downloading opsvis-1.3.8-py3-none-any.whl.metadata (1.3 kB)
+Downloading openseespy-3.8.0.0-py3-none-any.whl (2.8 kB)
+Downloading openseespywin-3.8.0.0-py3-none-win_amd64.whl (6.8 MB)
+   ---------------------------------------- 6.8/6.8 MB 1.2 MB/s eta 0:00:00
+Downloading opsvis-1.3.8-py3-none-any.whl (57 kB)
+Saved d:\fossee-runtime\pip-downloads\openseespy-3.8.0.0-py3-none-any.whl
+Saved d:\fossee-runtime\pip-downloads\openseespywin-3.8.0.0-py3-none-win_amd64.whl
+Saved d:\fossee-runtime\pip-downloads\opsvis-1.3.8-py3-none-any.whl
+Successfully downloaded openseespy openseespywin opsvis
+
+[notice] A new release of pip is available: 24.2 -> 26.3
+[notice] To update, run: python.exe -m pip install --upgrade pip

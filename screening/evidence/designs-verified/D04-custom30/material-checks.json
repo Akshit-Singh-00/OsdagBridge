@@ -1,0 +1,44 @@
+[
+  {
+    "property": "steel_E_Pa",
+    "expected": 210000000000.0,
+    "actual": 210000000000.0,
+    "status": "PASS"
+  },
+  {
+    "property": "steel_Fy_Pa",
+    "expected": 355000000.0,
+    "actual": 355000000.0,
+    "status": "PASS"
+  },
+  {
+    "property": "steel_Fu_Pa",
+    "expected": 510000000.0,
+    "actual": 510000000.0,
+    "status": "PASS"
+  },
+  {
+    "property": "steel_weight_density_N_m3",
+    "expected": 80000.0,
+    "actual": 78500.0,
+    "status": "FAIL"
+  },
+  {
+    "property": "concrete_fck_MPa",
+    "expected": 45.0,
+    "actual": 45.0,
+    "status": "PASS"
+  },
+  {
+    "property": "concrete_fctm_MPa",
+    "expected": 3.5,
+    "actual": 3.5,
+    "status": "PASS"
+  },
+  {
+    "property": "concrete_Ecm_GPa",
+    "expected": 35.0,
+    "actual": 35.0,
+    "status": "PASS"
+  }
+]

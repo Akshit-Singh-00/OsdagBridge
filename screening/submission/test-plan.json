@@ -1,0 +1,90 @@
+{
+  "project": "OsdagBridge Software Testing & Issue Reporting",
+  "candidate": "Akshit Singh",
+  "upstream": "https://github.com/Nidhikhare12/OsdagBridge",
+  "branch": "dev",
+  "commit": "d74f56dd7f22925fb8148cabf5740ed8d1e39ff3",
+  "test_date": "2026-11-20",
+  "status": "in_progress_backend_complete_desktop_control_blocked",
+  "cases": [
+    {
+      "id": "TC01",
+      "purpose": "Launch desktop and verify required-field validation",
+      "status": "desktop_launched_controller_blocked"
+    },
+    {
+      "id": "TC02",
+      "purpose": "Baseline 20 m span, 7.5 m carriageway, no footpath, zero skew; compare dictionaries and outputs",
+      "status": "baseline_reproduced_missing_shear_modulus_error"
+    },
+    {
+      "id": "TC03",
+      "purpose": "Custom steel and concrete property propagation into analysis materials",
+      "status": "executed_material_construction_6_pass_1_fail_per_custom_case"
+    },
+    {
+      "id": "TC04",
+      "purpose": "Three consecutive designs with changed span on the same backend and desktop unlock/re-run workflow",
+      "status": "three_backend_designs_completed_desktop_sequence_pending"
+    },
+    {
+      "id": "TC05",
+      "purpose": "Preservation of custom additional inputs after defaults expansion and OSI round trip",
+      "status": "executed_layout_checks_with_failures"
+    },
+    {
+      "id": "TC06",
+      "purpose": "Invalid geometry: zero, negative, non-finite values and invalid girder counts",
+      "status": "executed_validator_checks_with_failures"
+    },
+    {
+      "id": "TC07",
+      "purpose": "Girder, stiffener, cross-bracing, end-diaphragm and deck output coverage",
+      "status": "component_dictionaries_saved_gui_comparison_pending"
+    },
+    {
+      "id": "TC08",
+      "purpose": "Visual 3D CAD and plot generation after baseline and changed design",
+      "status": "three_native_cad_models_and_12_plots_generated_desktop_visual_pending"
+    },
+    {
+      "id": "TC09",
+      "purpose": "Compare displayed design results with output dictionary and report",
+      "status": "pending_desktop_access"
+    }
+  ],
+  "evidence_policy": "Record actual executions only. Distinguish source inspection, core automation, UI observation and structural-engineering verification. A successful execution does not certify structural safety.",
+  "submission_requirements": [
+    "PDF testing report",
+    "test logs/scripts/documentation repository",
+    "duplicate-checked issue links",
+    "supporting ZIP with OSI inputs",
+    "resume supplied by candidate",
+    "short video of custom input, three runs and CAD/plots"
+  ],
+  "completed_checks": {
+    "validation_original": {
+      "pass": 46,
+      "fail": 26
+    },
+    "layout_state_original": {
+      "pass": 11,
+      "fail": 10
+    },
+    "validation_proposal": {
+      "pass": 72,
+      "fail": 0
+    },
+    "full_design_attempts": {
+      "attempts": 4,
+      "completed": 3,
+      "error": 1,
+      "source": "evidence/designs-verified/summary.json"
+    },
+    "native_dependency_imports": {
+      "pass": 14,
+      "fail": 0
+    }
+  },
+  "blocker": "Desktop controller reports window minimized despite user restoration and controller reconnect; GUI sequence and video unverified."
+}
