@@ -1,0 +1,18 @@
+{
+  "method": "Observed desktop accessibility fields and Loaded OSI Successfully dialog through Computer Use",
+  "source_fixture": "evidence/designs-verified/D02-custom20/input.osi",
+  "observed": {
+    "span_m": 20,
+    "carriageway_width_m": 7.5,
+    "skew_degrees": 0,
+    "median": "No",
+    "footpath": "None",
+    "design_mode": "Optimized",
+    "girder_grade": "custom_steel_355_510",
+    "cross_bracing_grade": "custom_steel_355_510",
+    "end_diaphragm_grade": "custom_steel_355_510",
+    "deck_grade": "custom_concrete_45_3.5"
+  },
+  "design_executed": false,
+  "recording_started": false
+}

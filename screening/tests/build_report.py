@@ -121,20 +121,20 @@ add("Each completed run retains the full output dictionary, deck results (55 top
 add("For each completed run, the native CAD generator returned non-null shapes that pass OpenCascade BRepCheck_Analyzer in every recorded shape group. Each model has 12 girder plate shapes (four webs and eight flanges); stiffener, stud and cross-bracing entries include compounds. Overlapping groups must not be added to infer a total part count. The generated deck width and input overall width both equal 8400 mm.")
 add("Grillage, bending-moment, shear-force and deflection PNGs were generated for each completed run. Bending and shear plots use Envelope ULS; deflection uses 1.0 LL. Plot data summaries and load-case names are saved. Visual inspection confirms nonblank diagrams and changing span axes, but labels overlap and are crowded in the exported views. Native topology validity and visible plot generation do not establish that dimensions, member locations or design calculations are correct.")
 add("Desktop control limitation", "Heading2")
-add("The genuine desktop was launched with an observer that records original design calls without modifying their results. The window was listed as OsdagBridge, but the computer-use controller repeatedly rejected it as minimized, including after the candidate reported restoring it and after reconnecting the controller. No GUI design, UI-to-dictionary comparison, desktop CAD screenshot or recording is claimed. Startup logs are retained; this tooling limitation is not reported as an OsdagBridge defect.")
+add("The genuine desktop was launched with an observer that records original design calls without modifying their results. Desktop access was eventually restored and the D02 custom input was imported successfully; the visible fields show span 20 m, carriageway 7.5 m, zero skew and the intended custom steel/concrete grades. The Windows recording selector is dismissed by automated window activation, so manual recording startup is pending. No GUI design, completed UI-to-output comparison, desktop CAD verification or video is claimed. These control-tool limitations are not reported as OsdagBridge defects.")
 add("Evidence integrity", "Heading2")
 add("An initial harness run lacked a Windows multiprocessing main guard, allowing child processes to re-enter the tests. That run was stopped and explicitly invalidated. Only the corrected, completed evidence in designs-verified is packaged. The upstream source checkout remains clean; neither the structural code nor the solver was replaced or patched for these runs.")
 story.append(PageBreak())
 add("Remaining screening requirements", "Heading1")
 table([
     ["Requirement", "Current status / next action"],
-    ["Desktop launch and input/output comparison", "Process launched; controller cannot access the window. Visible input/output comparison is pending."],
+    ["Desktop launch and input/output comparison", "Desktop accessible; custom 20 m OSI imported. Three GUI design runs and input/output comparison remain pending."],
     ["Custom materials", "Seven material-construction assertions executed per custom case; six pass, density fails. Full member/load propagation remains partly unverified."],
     ["At least three consecutive design runs", "Three backend designs completed on one object. Desktop unlock/change/rerun remains pending."],
     ["CAD and plots", "Three native models and 12 PNG plots generated. Desktop model visual inspection and recording remain pending."],
     ["Component coverage", "Component dictionaries saved; their displayed GUI values and geometric correspondence still require comparison."],
-    ["GitHub repository and issue evidence", "Fork created at Akshit-Singh-00/OsdagBridge. Evidence publication, additional comments and collaborator invitation remain pending."],
-    ["Video and resume", "No video recorded. Candidate resume must be supplied or created from verified details."],
+    ["GitHub repository and issue evidence", "Interim evidence published to Akshit-Singh-00/OsdagBridge, branch codex/fossee-screening-evidence. Additional comments and collaborator invitation remain pending."],
+    ["Video and resume", "Recording startup needs manual assistance. Candidate resume received and reserved for the private submission package."],
     ["Final PDF and supporting ZIP", "This report and package are interim. Replace with completed evidence before submission."],
 ], [61*mm, 109*mm])
 add("Reproduction commands", "Heading2")

@@ -5,7 +5,7 @@
   "branch": "dev",
   "commit": "d74f56dd7f22925fb8148cabf5740ed8d1e39ff3",
   "test_date": "2026-11-20",
-  "status": "in_progress_backend_complete_desktop_control_blocked",
+  "status": "in_progress_recording_start_pending",
   "cases": [
     {
       "id": "TC01",
@@ -86,5 +86,8 @@
       "fail": 0
     }
   },
-  "blocker": "Desktop controller reports window minimized despite user restoration and controller reconnect; GUI sequence and video unverified."
+  "blocker": "Windows recording selector is dismissed by automated activation; manual recording startup requested. Desktop custom input import succeeded.",
+  "resume_received": true,
+  "resume_public": false,
+  "evidence_published": true
 }

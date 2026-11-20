@@ -1,4 +1,4 @@
-> Publication status: interim evidence. Desktop sequence, video, resume and final submission remain incomplete.
+> Publication status: interim evidence. Desktop sequence, video, mentor invitation and final submission remain incomplete. The resume is held privately.
 
 # OsdagBridge screening work
 
@@ -34,7 +34,7 @@ Prepared for Akshit Singh, FOSSEE Winter Internship 2026, 20 November 2026.
 
 ## Reproduce completed checks
 
-This directory is a standalone evidence package. Copy it to a separate directory before running the commands below; they create the pinned source checkout inside the package. The application source in this fork is unchanged.
+This directory is a standalone evidence package. Copy it outside this repository before running the commands below; they create the pinned source checkout inside the package. Application source is unchanged.
 
 Place this package beside a checkout called `OsdagBridge`, or clone that checkout into the package root:
 
@@ -67,15 +67,15 @@ $env:PIP_CACHE_DIR = 'D:\Fossee-runtime\pip-cache'
 
 Use that environment's Python for `tests/runtime_probe.py`, `tests/run_designs.py` and `tests/launch_observed_desktop.py`. The full-design runner uses the bundled weather record for Bhopal (Bairagarh), Madhya Pradesh. The earlier layout-only checks use a synthetic location fixture. An initial design run without a Windows multiprocessing guard was invalidated and excluded from the ZIP; only `designs-verified` contains accepted design evidence.
 
-The candidate's fork is available at https://github.com/Akshit-Singh-00/OsdagBridge. It is configured as `origin`; the original repository is `upstream`. Evidence publication and collaborator invitation are still pending.
+The candidate's fork is available at https://github.com/Akshit-Singh-00/OsdagBridge. It is configured as `origin`; the original repository is `upstream`. Interim evidence is published on branch `codex/fossee-screening-evidence`; collaborator invitation remains pending.
 
 ## Remaining work
 
-1. Restore desktop control: the application was launched, but the controller reported its window minimized even after the user reported restoring it. Reconnecting did not resolve the tool error.
+1. Start Windows recording manually: desktop control is restored and the custom 20 m input is imported, but automated activation dismisses the recording selector.
 2. Observe desktop unlock/change/rerun behavior; compare UI inputs, internal dictionaries, component results and reports. No GUI design run is claimed.
 3. Visually inspect the desktop 3D model and record the requested demonstration video. Native shape checks and generated plots do not replace this.
-4. Finalize duplicate-checked public evidence, the fork and collaborator invitation. Draft comments require review/publication; none have been sent.
-5. Add the candidate's verified resume, produce the final report/ZIP, and submit by 23 November 2026.
+4. Update the published interim evidence with desktop results and complete the collaborator invitation. Issue comments remain drafts.
+5. The candidate resume has been received privately. Add the completed recording, produce the final report/ZIP, and submit by 23 November 2026.
 
 ## Official references
 
