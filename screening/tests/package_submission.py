@@ -6,14 +6,13 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 ROOT = Path(__file__).resolve().parents[1]
 resume = ROOT / "private-submission/AkshitSingh_Resume.pdf"
-public = ROOT / "output/OsdagBridge_Interim_Evidence.zip"
-video = ROOT / "output/OsdagBridge_Demonstration.mp4"
-out = ROOT / "output/OsdagBridge_Private_Submission_Draft.zip"
-status = {"status": "draft_not_ready_for_final_submission", "resume_included": True,
+public = ROOT / "output/OsdagBridge_Evidence.zip"
+video = Path("D:/Fossee-runtime/submission/OsdagBridge_Demonstration.mp4")
+out = Path("D:/Fossee-runtime/submission/OsdagBridge_Private_Submission.zip")
+status = {"status": "prepared_for_candidate_review_and_submission", "resume_included": True,
           "video_included": video.exists(),
-          "pending": ["Three desktop design runs and UI/output comparison",
-                      "Verified silent demonstration video", "Collaborator invitation",
-                      "Final review and screening submission"]}
+          "video_format": "Silent walkthrough of genuine desktop key frames, pauses omitted; not a continuous screencast",
+          "pending": ["Final candidate review and screening form submission"]}
 manifest = {}
 with ZipFile(out, "w", ZIP_DEFLATED) as target:
     with ZipFile(public) as source:

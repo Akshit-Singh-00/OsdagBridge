@@ -53,19 +53,20 @@ def table(rows, widths):
 
 add("FOSSEE WINTER INTERNSHIP 2026", "Deck")
 add("OsdagBridge<br/>Software testing &amp;<br/>issue reporting", "Cover")
-add("Interim evidence report | 20 November 2026", "Deck")
+add("Testing evidence report | 20 November 2026", "Deck")
 add("Prepared for Akshit Singh", "Heading2")
-add("<b>Status: in progress; not ready for screening submission.</b> Validation, layout checks and four full-design attempts have been executed. Three consecutive custom-material designs completed, including native CAD construction and plot generation. Desktop interaction, the demonstration video and final submission requirements remain incomplete.")
+add("<b>Executed evidence:</b> 72 original validation checks, 21 layout checks, four backend design attempts and three consecutive desktop designs. The same desktop session was unlocked twice and rerun with 20, 25 and 30 m fixtures. Custom steel/concrete dialogs, CAD, structural plots and component summaries were observed. This report records both successful execution and reproducible mismatches.")
 table([
     ["Executed suite", "Original source", "Fix proposal"],
     ["Validation: 72 checks", f"{validation['passed']} pass / {validation['failed']} fail", f"{proposal['passed']} pass / {proposal['failed']} fail"],
     [f"Layout and state: {len(state['cases'])} checks", f"{state['passed']} pass / {state['failed']} fail", "Not applied"],
     ["Full design attempts: 4", "3 completed / 1 error", "Original source"],
-    ["Native CAD / structural plots", "3 models / 12 plots generated", "Desktop visuals pending"],
+    ["Native CAD / structural plots", "3 models / 12 plots generated", "Desktop views inspected"],
+    ["Consecutive desktop designs", "3 completed / 0 exceptions", "20 / 25 / 30 m"],
 ], [78*mm, 48*mm, 44*mm])
 story.append(Spacer(1, 8*mm))
 add("Scope and interpretation", "Heading2")
-add("A failed check is a reproducible expectation mismatch, not a count of unique bugs. Most observed failures match already-open upstream issues. Completed calculations do not imply a passing engineering design: all three custom cases report fatigue utilization above 100%. No independent structural-code verification, desktop CAD visual approval or GUI crash is claimed.")
+add("A failed check is a reproducible expectation mismatch, not a count of unique bugs. Observed defects overlap existing upstream issues. Completed calculations do not imply a passing engineering design: all custom cases report fatigue utilization above 100%. No independent structural-code verification or GUI crash is claimed. UI comparisons are sampled and their limits are stated explicitly.")
 add("The separate validation proposal was tested temporarily against the real modules. Both upstream files were then restored byte-for-byte. Original failing evidence and proposal results are stored separately.")
 story.append(PageBreak())
 
@@ -120,28 +121,51 @@ add("Outputs, geometry and limitations", "Heading1")
 add("Each completed run retains the full output dictionary, deck results (55 top-level entries), cross-bracing results (3 entries) and end-diaphragm results (3 entries). These are dictionary-entry counts, not counts of physical parts. The output span matches the requested span in all three cases.")
 add("For each completed run, the native CAD generator returned non-null shapes that pass OpenCascade BRepCheck_Analyzer in every recorded shape group. Each model has 12 girder plate shapes (four webs and eight flanges); stiffener, stud and cross-bracing entries include compounds. Overlapping groups must not be added to infer a total part count. The generated deck width and input overall width both equal 8400 mm.")
 add("Grillage, bending-moment, shear-force and deflection PNGs were generated for each completed run. Bending and shear plots use Envelope ULS; deflection uses 1.0 LL. Plot data summaries and load-case names are saved. Visual inspection confirms nonblank diagrams and changing span axes, but labels overlap and are crowded in the exported views. Native topology validity and visible plot generation do not establish that dimensions, member locations or design calculations are correct.")
-add("Desktop control limitation", "Heading2")
-add("The genuine desktop was launched with an observer that records original design calls without modifying their results. Desktop access was eventually restored and the D02 custom input was imported successfully; the visible fields show span 20 m, carriageway 7.5 m, zero skew and the intended custom steel/concrete grades. The Windows recording selector is dismissed by automated window activation, so manual recording startup is pending. No GUI design, completed UI-to-output comparison, desktop CAD verification or video is claimed. These control-tool limitations are not reported as OsdagBridge defects.")
+add("Desktop execution and recording method", "Heading2")
+add("The genuine desktop was launched with an observer around the original design method. It records inputs and outputs without modifying results. All three GUI designs completed in one session (25.38, 28.08 and 33.81 seconds for the observed backend calls). Between runs the unlock confirmation was accepted and the next full OSI fixture was imported. This verifies unlock/import/rerun, rather than direct span editing with old segment tables. CAD visibly changed to 20.00, 25.00 and 30.00 m. The silent video is a labelled sequence of genuine desktop key-frame captures with pauses omitted; it is not a continuous real-time screencast.")
 add("Evidence integrity", "Heading2")
 add("An initial harness run lacked a Windows multiprocessing main guard, allowing child processes to re-enter the tests. That run was stopped and explicitly invalidated. Only the corrected, completed evidence in designs-verified is packaged. The upstream source checkout remains clean; neither the structural code nor the solver was replaced or patched for these runs.")
 story.append(PageBreak())
-add("Remaining screening requirements", "Heading1")
+add("Coverage and submission contents", "Heading1")
 table([
     ["Requirement", "Current status / next action"],
-    ["Desktop launch and input/output comparison", "Desktop accessible; custom 20 m OSI imported. Three GUI design runs and input/output comparison remain pending."],
+    ["Desktop launch and input/output comparison", "Three GUI runs completed. Every compared material/basic-geometry fixture field matches the original design-call input; sampled deck and cross-bracing outputs match."],
     ["Custom materials", "Seven material-construction assertions executed per custom case; six pass, density fails. Full member/load propagation remains partly unverified."],
-    ["At least three consecutive design runs", "Three backend designs completed on one object. Desktop unlock/change/rerun remains pending."],
-    ["CAD and plots", "Three native models and 12 PNG plots generated. Desktop model visual inspection and recording remain pending."],
-    ["Component coverage", "Component dictionaries saved; their displayed GUI values and geometric correspondence still require comparison."],
-    ["GitHub repository and issue evidence", "Interim evidence published to Akshit-Singh-00/OsdagBridge, branch codex/fossee-screening-evidence. Additional comments and collaborator invitation remain pending."],
-    ["Video and resume", "Recording startup needs manual assistance. Candidate resume received and reserved for the private submission package."],
-    ["Final PDF and supporting ZIP", "This report and package are interim. Replace with completed evidence before submission."],
+    ["At least three consecutive design runs", "Three desktop designs completed in one session with unlock/import changes, in addition to the separate backend sequence."],
+    ["CAD and plots", "Three native models and 12 PNG plots generated; desktop bridge, girders/stiffeners, bracing and plot views inspected."],
+    ["Component coverage", "Girder CAD, deck and transverse summaries sampled. End-diaphragm UI mismatch reproduced. Exhaustive member/code/report verification is outside the completed checks."],
+    ["GitHub repository and issue evidence", "Evidence branch: Akshit-Singh-00/OsdagBridge, codex/fossee-screening-evidence. Existing issue links and reviewable repair proposal included; publication status is tracked separately."],
+    ["Video and resume", "Silent key-frame walkthrough supplied. Original candidate resume is included only in the private submission ZIP."],
+    ["PDF and supporting ZIP", "This report accompanies exact OSI files, dictionaries, screenshots, scripts, logs and checksums. Administrative submission status is separate from test outcomes."],
 ], [61*mm, 109*mm])
 add("Reproduction commands", "Heading2")
 for line in ["git clone --branch dev https://github.com/Nidhikhare12/OsdagBridge.git", "git -C OsdagBridge checkout d74f56dd7f22925fb8148cabf5740ed8d1e39ff3", "python tests/run_validation.py", "python tests/run_state_checks.py", "python tests/check_validation_proposal.py"]:
     add(escape(line), "Code")
 add("Run from the package root, with the upstream checkout named OsdagBridge. The first two test scripts intentionally return exit code 1 when they reproduce original defects. The proposal runner restores its two source files in a finally block. Keep the pinned original version for evidence collection.")
 add("For full tests, install the project environment, then use its Python to run tests/runtime_probe.py and tests/run_designs.py. The design script initializes the packaged Osdag section database as required by desktop startup, then records four attempts on the same backend. It does not operate the GUI or substitute for the demonstration video.")
+story.append(PageBreak())
+add("Desktop input/output comparisons", "Heading1")
+add("The saved design-call inputs match every compared basic geometry and material field in the corresponding fixture, and all three output spans equal the UI span. Source: evidence/desktop/comparison.json. The explicit desktop material dialogs show steel 355/510 MPa, E 210 GPa, G 80.8 GPa and density 80 kN/m3; concrete 45/3.5 MPa, Ecm 35 GPa and density 24 kN/m3.")
+table([["30 m desktop observation", "Original output dictionary", "Result"],
+ ["Deck grade; thickness; overhang", "custom_concrete_45_3.5; 250 mm; 1050 mm", "Match"],
+ ["Top rebar: 12 mm @195; area 580", "12; 195; 580 (deck_design_results)", "Match"],
+ ["Bottom rebar: 12 mm @180; area 628", "12; 180; 628 (deck_design_results)", "Match"],
+ ["Deck sagging / hogging / shear: 90/73/78%", "0.899 / 0.729 / 0.782, rounded to percent", "Match"],
+ ["G1-G2 cross-brace utilization: .100/.460/.080/.380", "Same four Member.efficiency values", "Match"],
+ ["End-diaphragm UI: same four ratios, PASS", "end_diaphragm_design_results G1-G2 is empty", "Mismatch"]], [66*mm,80*mm,24*mm])
+add("The UI comparison script records 15 deck matches and four cross-bracing matches. Saved native accessibility captures preserve the visible values and component labels. The main dock initially selects G1/SW; its rounded values are not compared directly to the global envelope utilization, which represents a different selection.")
+add("F05 - End-diaphragm result routing", "Heading2")
+add("The End Diaphragm tab labels E1M1/E1M2 rows but repeats cross-bracing demands, capacities and ratios, despite empty own results. This supplies further evidence for <link href='https://github.com/Nidhikhare12/OsdagBridge/issues/72'>issue #72</link>. In src/osdagbridge/desktop/ui/dialogs/transverse_member_design.py, _try_load_data() (near lines 893-944), route the diaphragm tab only to end_diaphragm_design_results; display unavailable/error when that result is empty. Do not silently fall back to cross-bracing results. Suggested repair, not applied.")
+add("Additional visual observations", "Heading2")
+add("The initial imported location dialog had empty state/district controls; Bhopal was explicitly selected before running. Related UI-state report: <link href='https://github.com/Nidhikhare12/OsdagBridge/issues/105'>#105</link>. The diaphragm preview looks V-shaped while its field reads X-Bracing, and plot radio buttons lack visible text in this runtime. These are retained as observations without claiming new independently isolated bugs. Screenshots document the rendering context.")
+story.append(PageBreak())
+add("Selected desktop evidence", "Heading1")
+for name,caption in [("14-cad30.png","Third consecutive GUI design: 30 m bridge CAD."),("17-enddiaphragm-summary.png","End-diaphragm display: tab, selected pair, fields and preview.")]:
+    img=Image(str(ROOT/'evidence/desktop/screenshots'/name))
+    ratio=min(170*mm/img.imageWidth,90*mm/img.imageHeight)
+    img.drawWidth=img.imageWidth*ratio; img.drawHeight=img.imageHeight*ratio
+    story.extend([img,p(caption),Spacer(1,4*mm)])
+add("Evidence limits: no independent structural certification, exhaustive UI audit or generated LaTeX design-report comparison. The raw dictionaries retain warnings and failed engineering checks. This submission was prepared with AI-assisted scripting, desktop operation and documentation; the candidate should understand and review the findings.")
 story.append(PageBreak())
 
 add("Appendix A - All validation observations", "Heading1")
@@ -174,13 +198,13 @@ def footer(canvas, doc):
     canvas.line(20*mm, 16*mm, 190*mm, 16*mm)
     canvas.setFont("Helvetica", 8)
     canvas.setFillColor(colors.HexColor("#546b79"))
-    canvas.drawString(20*mm, 11*mm, "AKSHIT SINGH  |  OSDAGBRIDGE  |  INTERIM - NOT SUBMISSION READY")
+    canvas.drawString(20*mm, 11*mm, "AKSHIT SINGH  |  OSDAGBRIDGE  |  EXECUTED TESTING EVIDENCE")
     canvas.drawRightString(190*mm, 11*mm, str(doc.page))
     canvas.restoreState()
 
 
-path = OUT / "OsdagBridge_Interim_Testing_Report.pdf"
+path = OUT / "OsdagBridge_Testing_Report.pdf"
 doc = SimpleDocTemplate(str(path), pagesize=A4, rightMargin=20*mm, leftMargin=20*mm,
-                        topMargin=19*mm, bottomMargin=23*mm, title="OsdagBridge Interim Testing Report", author="Akshit Singh")
+                        topMargin=19*mm, bottomMargin=23*mm, title="OsdagBridge Testing Report", author="Akshit Singh")
 doc.build(story, onFirstPage=footer, onLaterPages=footer)
 print(path)

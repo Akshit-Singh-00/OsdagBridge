@@ -1,0 +1,157 @@
+{
+  "method": "Values transcribed from saved native accessibility observations and screenshots; sampled comparison only.",
+  "run": "run-03",
+  "deck_checks": [
+    {
+      "field": "deck_grade",
+      "ui": "custom_concrete_45_3.5",
+      "backend": "custom_concrete_45_3.5",
+      "match": true
+    },
+    {
+      "field": "deck_thickness",
+      "ui": "250",
+      "backend": "250",
+      "match": true
+    },
+    {
+      "field": "deck_overhang",
+      "ui": "1050",
+      "backend": "1050",
+      "match": true
+    },
+    {
+      "field": "rebar_top_yield",
+      "ui": "500",
+      "backend": "500",
+      "match": true
+    },
+    {
+      "field": "rebar_top_dia",
+      "ui": "12",
+      "backend": "12",
+      "match": true
+    },
+    {
+      "field": "rebar_top_spacing",
+      "ui": "195",
+      "backend": "195",
+      "match": true
+    },
+    {
+      "field": "rebar_top_cover",
+      "ui": "50",
+      "backend": "50",
+      "match": true
+    },
+    {
+      "field": "rebar_top_area",
+      "ui": "580",
+      "backend": "580",
+      "match": true
+    },
+    {
+      "field": "rebar_bottom_dia",
+      "ui": "12",
+      "backend": "12",
+      "match": true
+    },
+    {
+      "field": "rebar_bottom_spacing",
+      "ui": "180",
+      "backend": "180",
+      "match": true
+    },
+    {
+      "field": "rebar_bottom_cover",
+      "ui": "50",
+      "backend": "50",
+      "match": true
+    },
+    {
+      "field": "rebar_bottom_area",
+      "ui": "628",
+      "backend": "628",
+      "match": true
+    },
+    {
+      "field": "ur_bot_uls",
+      "ui_percent": 90,
+      "backend_ratio": 0.899,
+      "match": true
+    },
+    {
+      "field": "ur_top_uls",
+      "ui_percent": 73,
+      "backend_ratio": 0.729,
+      "match": true
+    },
+    {
+      "field": "ur_bot_shear",
+      "ui_percent": 78,
+      "backend_ratio": 0.782,
+      "match": true
+    }
+  ],
+  "crossbracing_checks": [
+    {
+      "component": "diagonal",
+      "mode": "tension",
+      "ui_ratio": 0.1,
+      "backend": 0.1,
+      "match": true
+    },
+    {
+      "component": "diagonal",
+      "mode": "compression",
+      "ui_ratio": 0.46,
+      "backend": 0.46,
+      "match": true
+    },
+    {
+      "component": "chord",
+      "mode": "tension",
+      "ui_ratio": 0.08,
+      "backend": 0.08,
+      "match": true
+    },
+    {
+      "component": "chord",
+      "mode": "compression",
+      "ui_ratio": 0.38,
+      "backend": 0.38,
+      "match": true
+    }
+  ],
+  "end_diaphragm": {
+    "backend_G1_G2": {},
+    "ui_ratios": [
+      0.1,
+      0.46,
+      0.08,
+      0.38
+    ],
+    "ui_status": "PASS",
+    "observation": "UI repeats cross-bracing ratios with E1M1/E1M2 labels despite empty own backend results.",
+    "match": false,
+    "related_issue": "https://github.com/Nidhikhare12/OsdagBridge/issues/72"
+  },
+  "visual_observations": [
+    "All three completed CAD views show the requested 20/25/30 m span, 8.40 m width, 2.10 m spacing and 250 mm deck.",
+    "Girder/stiffener and girder-plus-crossbracing geometry rendered in the 20 m CAD view.",
+    "End Diaphragm preview looks V-shaped while its field reads X-Bracing; retained as an observation, not an independently established new defect.",
+    "Plot radio buttons have no visible text labels in this runtime; selecting one changes the SW shear view to a displayed Tx moment view.",
+    "Initial imported location dialog had empty selection controls; Bhopal was explicitly selected before Design. Related UI state issue #105."
+  ],
+  "limits": [
+    "No independent structural verification",
+    "Not an exhaustive UI/field comparison",
+    "No generated LaTeX report comparison"
+  ],
+  "source_files": [
+    "screenshots/run03-deck-ax.txt",
+    "screenshots/run03-crossbracing-ax.txt",
+    "screenshots/run03-enddiaphragm-ax.txt",
+    "run-03/output.json"
+  ]
+}

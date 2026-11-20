@@ -1,0 +1,224 @@
+Windows fatal exception: code 0x8001010d
+
+Current thread 0x00007924 (most recent call first):
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\desktop\__main__.py", line 293 in main
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\tests\launch_observed_desktop.py", line 88 in <module>
+Traceback (most recent call last):
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\desktop\ui\docks\input_dock.py", line 546, in <lambda>
+    info.clicked.connect(lambda _=False, k=widget.objectName(): self._show_material_info(k))
+                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\desktop\ui\docks\input_dock.py", line 806, in _show_material_info
+    MaterialPropertiesDialog(
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\desktop\ui\dialogs\material_properties.py", line 261, in __init__
+    self._load_material_info_for_view(self.selected_material)
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\desktop\ui\dialogs\material_properties.py", line 751, in _load_material_info_for_view
+    KEY_MATERIAL_GIRDER_E: "{:.1f}".format(defaults.get("E", 0.0)) if defaults else "",
+                                                                      ^^^^^^^^
+UnboundLocalError: cannot access local variable 'defaults' where it is not associated with a value
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:607: UserWarning: No footpath component in layout; skipping footpath load creation
+  warnings.warn("No footpath component in layout; skipping footpath load creation")
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:771: UserWarning: No railing component in layout; skipping railing load creation
+  warnings.warn("No railing component in layout; skipping railing load creation")
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:854: UserWarning: No median component in layout; skipping median load creation
+  warnings.warn("No median component in layout; skipping median load creation")
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_1: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_2: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_3: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_4: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_5: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_6: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_1: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_2: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+Windows fatal exception: code 0x8001010d
+
+Current thread 0x000030f4 (most recent call first):
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\desktop\ui\dialogs\loading_popup.py", line 342 in run_loading_dialog_process
+  File "D:\Fossee-runtime\env\Lib\multiprocessing\process.py", line 108 in run
+  File "D:\Fossee-runtime\env\Lib\multiprocessing\process.py", line 314 in _bootstrap
+  File "D:\Fossee-runtime\env\Lib\multiprocessing\spawn.py", line 135 in _main
+  File "D:\Fossee-runtime\env\Lib\multiprocessing\spawn.py", line 122 in spawn_main
+  File "<string>", line 1 in <module>
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_3: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_1: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_2: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_3: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_4: 'thermal_load' load case not available � create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_1: 'thermal_load' load case not available � create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_2: 'thermal_load' load case not available � create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_3: 'thermal_load' load case not available � create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_4: 'thermal_load' load case not available � create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_5: 'thermal_load' load case not available � create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_6: 'thermal_load' load case not available � create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_1: 'thermal_load' load case not available � create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_2: 'thermal_load' load case not available � create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_3: 'thermal_load' load case not available � create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_4: 'thermal_load' load case not available � create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_5: 'thermal_load' load case not available � create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_6: 'thermal_load' load case not available � create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_QP_1: 'thermal_load' load case not available � create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_QP_2: 'thermal_load' load case not available � create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:607: UserWarning: No footpath component in layout; skipping footpath load creation
+  warnings.warn("No footpath component in layout; skipping footpath load creation")
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:771: UserWarning: No railing component in layout; skipping railing load creation
+  warnings.warn("No railing component in layout; skipping railing load creation")
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:854: UserWarning: No median component in layout; skipping median load creation
+  warnings.warn("No median component in layout; skipping median load creation")
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_1: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_2: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_3: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_4: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+Windows fatal exception: code 0x8001010d
+
+Current thread 0x000039f0 (most recent call first):
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\desktop\ui\dialogs\loading_popup.py", line 342 in run_loading_dialog_process
+  File "D:\Fossee-runtime\env\Lib\multiprocessing\process.py", line 108 in run
+  File "D:\Fossee-runtime\env\Lib\multiprocessing\process.py", line 314 in _bootstrap
+  File "D:\Fossee-runtime\env\Lib\multiprocessing\spawn.py", line 135 in _main
+  File "D:\Fossee-runtime\env\Lib\multiprocessing\spawn.py", line 122 in spawn_main
+  File "<string>", line 1 in <module>
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_5: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_6: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_1: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_2: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_3: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_1: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_2: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_3: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_4: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_1: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_2: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_3: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_4: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_5: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_6: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_1: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_2: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_3: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_4: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_5: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_6: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_QP_1: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_QP_2: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:607: UserWarning: No footpath component in layout; skipping footpath load creation
+  warnings.warn("No footpath component in layout; skipping footpath load creation")
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:771: UserWarning: No railing component in layout; skipping railing load creation
+  warnings.warn("No railing component in layout; skipping railing load creation")
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:854: UserWarning: No median component in layout; skipping median load creation
+  warnings.warn("No median component in layout; skipping median load creation")
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_1: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+Windows fatal exception: code 0x8001010d
+
+Current thread 0x000052ec (most recent call first):
+  File "C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\desktop\ui\dialogs\loading_popup.py", line 342 in run_loading_dialog_process
+  File "D:\Fossee-runtime\env\Lib\multiprocessing\process.py", line 108 in run
+  File "D:\Fossee-runtime\env\Lib\multiprocessing\process.py", line 314 in _bootstrap
+  File "D:\Fossee-runtime\env\Lib\multiprocessing\spawn.py", line 135 in _main
+  File "D:\Fossee-runtime\env\Lib\multiprocessing\spawn.py", line 122 in spawn_main
+  File "<string>", line 1 in <module>
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_2: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_3: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_4: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_5: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: BASIC_6: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_1: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_2: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: ACCIDENTAL_3: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_1: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_2: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_3: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2381: UserWarning: SEISMIC_4: 'thermal_load' load case not available — create it before calling create_uls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_1: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_2: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_3: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_4: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_5: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_RARE_6: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_1: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_2: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_3: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_4: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_5: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_FREQUENT_6: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_QP_1: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(
+C:\Users\Dell\OneDrive\Documents\ChatGPT\Fossee\OsdagBridge\src\osdagbridge\core\bridge_types\plate_girder\analyser.py:2576: UserWarning: SLS_QP_2: 'thermal_load' load case not available — create it before calling create_sls_combinations().
+  warnings.warn(

@@ -5,12 +5,12 @@
   "branch": "dev",
   "commit": "d74f56dd7f22925fb8148cabf5740ed8d1e39ff3",
   "test_date": "2026-11-20",
-  "status": "in_progress_recording_start_pending",
+  "status": "testing_and_artifacts_prepared",
   "cases": [
     {
       "id": "TC01",
       "purpose": "Launch desktop and verify required-field validation",
-      "status": "desktop_launched_controller_blocked"
+      "status": "desktop_launched_required_blank_field_design_not_tested"
     },
     {
       "id": "TC02",
@@ -25,7 +25,7 @@
     {
       "id": "TC04",
       "purpose": "Three consecutive designs with changed span on the same backend and desktop unlock/re-run workflow",
-      "status": "three_backend_designs_completed_desktop_sequence_pending"
+      "status": "three_consecutive_desktop_unlock_import_reruns_completed"
     },
     {
       "id": "TC05",
@@ -40,17 +40,17 @@
     {
       "id": "TC07",
       "purpose": "Girder, stiffener, cross-bracing, end-diaphragm and deck output coverage",
-      "status": "component_dictionaries_saved_gui_comparison_pending"
+      "status": "sampled_deck_and_transverse_ui_compared_diaphagm_mismatch"
     },
     {
       "id": "TC08",
       "purpose": "Visual 3D CAD and plot generation after baseline and changed design",
-      "status": "three_native_cad_models_and_12_plots_generated_desktop_visual_pending"
+      "status": "native_and_desktop_cad_plots_inspected"
     },
     {
       "id": "TC09",
       "purpose": "Compare displayed design results with output dictionary and report",
-      "status": "pending_desktop_access"
+      "status": "sampled_desktop_output_comparison_completed_latex_report_not_compared"
     }
   ],
   "evidence_policy": "Record actual executions only. Distinguish source inspection, core automation, UI observation and structural-engineering verification. A successful execution does not certify structural safety.",
@@ -84,9 +84,14 @@
     "native_dependency_imports": {
       "pass": 14,
       "fail": 0
+    },
+    "desktop_designs": {
+      "completed": 3,
+      "error": 0,
+      "source": "evidence/desktop/comparison.json"
     }
   },
-  "blocker": "Windows recording selector is dismissed by automated activation; manual recording startup requested. Desktop custom input import succeeded.",
+  "blocker": null,
   "resume_received": true,
   "resume_public": false,
   "evidence_published": true

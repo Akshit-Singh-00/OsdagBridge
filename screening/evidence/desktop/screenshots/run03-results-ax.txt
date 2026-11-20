@@ -1,0 +1,227 @@
+Window: "OsdagBridge", App: python.exe.
+	0 window (settable, string) OsdagBridge Secondary Actions: Raise ID: QApplication.CustomWindow
+		1 window (settable, string) python Secondary Actions: Raise ID: QApplication.NavCubeOverlay
+		609 window (settable, string) python Secondary Actions: Raise ID: QApplication.AxisTriadOverlay
+		2 title bar (settable, string) Value: OsdagBridge
+			3 menu bar System ID: MenuBar
+				610 menu item System
+			5 button Minimize
+			6 button Restore
+			7 button Close
+		8 menu bar (settable, string) ID: QApplication.CustomWindow.template_page_menu_bar
+			9 menu item (settable, string) File ID: QApplication.CustomWindow.template_page_menu_bar.QAction
+			10 menu item (settable, string) Graphics ID: QApplication.CustomWindow.template_page_menu_bar.QAction
+			11 menu item (settable, string) Database ID: QApplication.CustomWindow.template_page_menu_bar.QAction
+			12 menu item (settable, string) Help ID: QApplication.CustomWindow.template_page_menu_bar.QAction
+		13 group (settable, string) ID: QApplication.CustomWindow.control_btn_widget
+			14 group (settable, string) ID: QApplication.CustomWindow.control_btn_widget.ClickableSvgWidget
+			15 group (settable, string) ID: QApplication.CustomWindow.control_btn_widget.ClickableSvgWidget
+			16 group (settable, string) ID: QApplication.CustomWindow.control_btn_widget.ClickableSvgWidget
+			17 group (settable, string) ID: QApplication.CustomWindow.control_btn_widget.ClickableSvgWidget
+			18 group (settable, string) ID: QApplication.CustomWindow.control_btn_widget.ClickableSvgWidget
+			19 group (settable, string) ID: QApplication.CustomWindow.control_btn_widget.ClickableSvgWidget
+			20 group (settable, string) ID: QApplication.CustomWindow.control_btn_widget.ClickableSvgWidget
+		21 group (settable, string) ID: QApplication.CustomWindow.QWidget
+			22 custom (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter
+				281 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock
+					282 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget
+						283 button (settable, string) ❯ ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QPushButton
+					284 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget
+						285 button (settable, string) Output Dock ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QPushButton
+						286 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea
+							287 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport
+								288 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget
+									289 group (settable, string) Girder Analysis Results ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox
+										290 text Member ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QLabel
+										291 combo box (settable, string) Girder Analysis Results Value: All ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.analysis.member
+										292 text Load Case / Combination ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QLabel
+										293 combo box (settable, string) Girder Analysis Results Value: SW ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.analysis.load_combination
+										294 radio button (selectable, settable, string) Girder Analysis Results ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.CustomRadioButton
+										295 radio button (selectable, settable, string) Girder Analysis Results ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.CustomRadioButton
+										296 radio button (selectable, settable, string) Girder Analysis Results ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.CustomRadioButton
+										297 radio button (selectable, settable, string) Girder Analysis Results ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.CustomRadioButton
+										298 radio button (selectable, settable, string) Girder Analysis Results ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.CustomRadioButton
+										299 radio button (selectable, settable, string) Girder Analysis Results ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.CustomRadioButton
+										300 radio button (selectable, settable, string) Girder Analysis Results ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.CustomRadioButton
+										301 radio button (selectable, settable, string) Girder Analysis Results ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.CustomRadioButton
+										302 radio button (selectable, settable, string) Girder Analysis Results ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.CustomRadioButton
+										303 group (settable, string) Girder Analysis Results ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QGroupBox
+											304 checkbox (check box) (settable, string) Max ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QGroupBox.QCheckBox
+											305 checkbox (check box) (settable, string) Min ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QGroupBox.QCheckBox
+											306 checkbox (check box) (settable, string) All ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QGroupBox.QCheckBox
+											307 checkbox (check box) (settable, string) Summary ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QGroupBox.QCheckBox
+											308 checkbox (check box) (settable, string) Utilization Ratio ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QGroupBox.analysis.utilization
+									309 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox
+										310 text Superstructure ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QLabel
+										311 checkbox (check box) (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QPushButton
+										312 custom (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame
+											313 group (settable, string) Girder Design ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox
+												314 text Member ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.QLabel
+												315 combo box (settable, string) Girder Design Value: G1 ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.dock.member_id
+												316 text Load Case / Combination ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.QLabel
+												317 combo box (settable, string) Girder Design Value: SW ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.dock.load_combination
+												318 group (settable, string) Girder Design ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.flexure
+													319 text Strength Limit State (Flexure) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.flexure.QLabel
+													320 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.flexure._BarPainter
+													321 text 2% ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.flexure.QLabel
+												322 group (settable, string) Girder Design ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.shear
+													323 text Strength Limit State (Shear) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.shear.QLabel
+													324 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.shear._BarPainter
+													325 text 4% ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.shear.QLabel
+												326 group (settable, string) Girder Design ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.interaction
+													327 text Interaction ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.interaction.QLabel
+													328 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.interaction._BarPainter
+													329 text 2% ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.interaction.QLabel
+												330 group (settable, string) Girder Design ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.ltb
+													331 text Lateral Torsional Buckling ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.ltb.QLabel
+													332 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.ltb._BarPainter
+													333 text 22% ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.ltb.QLabel
+												334 group (settable, string) Girder Design ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.long_trans_shear
+													335 text Resistance to Longitudinal Shear ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.long_trans_shear.QLabel
+													336 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.long_trans_shear._BarPainter
+													337 text 21% ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.long_trans_shear.QLabel
+												338 group (settable, string) Girder Design ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.stress_limitation
+													339 text Stress Limitation ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.stress_limitation.QLabel
+													340 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.stress_limitation._BarPainter
+													341 text 2% ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.util.stress_limitation.QLabel
+												342 button (settable, string) Analysis and Design Results Summary ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.QPushButton
+											343 group (settable, string) Transverse Design ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox
+												344 button (settable, string) Design Summary ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.QPushButton
+											345 group (settable, string) Deck Design ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox
+												346 button (settable, string) Design Summary ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.QGroupBox.QPushButton
+									347 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox
+										348 text Substructure ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QLabel
+										349 checkbox (check box) (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QPushButton
+										350 custom (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame
+							351 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_vcontainer
+								352 scroll bar (settable, float) Value: 0 ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.QScrollArea.qt_scrollarea_vcontainer.QScrollBar
+						353 button (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.dock_custom_button
+							354 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.dock_custom_button.button_icon
+							355 text Generate Results Table ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.dock_custom_button.button_label
+						356 button (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.dock_custom_button
+							357 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.dock_custom_button.button_icon
+							358 text Generate Report ID: QApplication.CustomWindow.QWidget.QSplitter.OutputDock.QWidget.dock_custom_button.button_label
+				23 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget
+					240 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget
+						241 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea
+							242 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport
+								243 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget
+									244 button (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QPushButton
+									245 checkbox (check box) (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QPushButton
+									246 button (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QPushButton
+									247 button (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QPushButton
+									248 custom (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QFrame
+									249 checkbox (check box) (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QPushButton
+									250 checkbox (check box) (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QPushButton
+									251 custom (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QFrame
+									252 checkbox (check box) (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QPushButton
+									253 checkbox (check box) (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QPushButton
+									254 checkbox (check box) (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QPushButton
+									255 custom (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QFrame
+									256 checkbox (check box) (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QPushButton
+									257 checkbox (check box) (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QPushButton
+									258 checkbox (check box) (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QPushButton
+									259 custom (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.ToolBarWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QFrame
+					24 custom (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter
+						260 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow
+							611 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.cad_component_selector
+								612 checkbox (check box) (settable, string) Bridge ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.cad_component_selector.Bridge
+								613 checkbox (check box) (settable, string) Girder ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.cad_component_selector.Girder
+								614 checkbox (check box) (settable, string) Deck ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.cad_component_selector.Deck
+								615 checkbox (check box) (settable, string) Cross Bracing ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.cad_component_selector.Cross Bracing
+								616 checkbox (check box) (settable, string) Crash Barrier ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.cad_component_selector.Crash Barrier
+							267 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.qt_viewer_3d
+								596 custom (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.qt_viewer_3d.QFrame
+									597 text Overall Bridge Width: ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.qt_viewer_3d.QFrame.QLabel
+									598 text 8.40 ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.qt_viewer_3d.QFrame.QLabel
+									599 text m ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.qt_viewer_3d.QFrame.QLabel
+									600 text Span Length: ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.qt_viewer_3d.QFrame.QLabel
+									601 text 30.00 ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.qt_viewer_3d.QFrame.QLabel
+									602 text m ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.qt_viewer_3d.QFrame.QLabel
+									603 text Girder Spacing: ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.qt_viewer_3d.QFrame.QLabel
+									604 text 2.10 ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.qt_viewer_3d.QFrame.QLabel
+									605 text m ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.qt_viewer_3d.QFrame.QLabel
+									606 text Deck Thickness: ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.qt_viewer_3d.QFrame.QLabel
+									607 text 250 ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.qt_viewer_3d.QFrame.QLabel
+									608 text mm ID: QApplication.CustomWindow.QWidget.QSplitter.QWidget.QSplitter.CAD3DWindow.qt_viewer_3d.QFrame.QLabel
+				52 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock
+					53 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget
+						54 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea
+							55 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport
+								56 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget
+									57 button (settable, string) Basic Inputs ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QPushButton
+									58 button (settable, string) Additional Inputs ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QPushButton
+									59 checkbox (check box) (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.lock_btn
+									60 group (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea
+										61 group (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport
+											62 group (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget
+												63 group (disabled, settable, string) Type of Structure ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.section.structure_group
+													64 text (disabled) Structure Type ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.section.structure_group.QLabel
+													65 combo box (disabled, settable, string) Type of Structure Value: Highway Bridge ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.section.structure_group.structure.type
+												66 group (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.section.project_group
+													67 text (disabled) Project Location* ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.section.project_group.QLabel
+													68 button (disabled, settable, string) Select Location ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.section.project_group.project.location
+													212 group (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.section.project_group.project.location_info_row
+														213 image (disabled) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.section.project_group.project.location_info_row.QLabel
+														214 text (disabled) Bhopal (Bairagarh), Madhya Pradesh ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.section.project_group.project.location_info_row.project.location_info_label
+												69 group (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox
+													70 text (disabled) Superstructure ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QLabel
+													71 checkbox (check box) (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QPushButton
+													72 custom (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame
+														73 group (disabled, settable, string) Geometric Details ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.geometry_group
+															74 text (disabled) Span (m)* ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.geometry_group.QLabel
+															75 text field (edit) (disabled, settable, string) Geometric Details Value: 30 ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.geometry_group.geometry.span
+															76 text (disabled) Carriageway Width* (Each way) (m) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.geometry_group.QLabel
+															77 text field (edit) (disabled, settable, string) Geometric Details Value: 7.5 ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.geometry_group.geometry.carriageway_width
+															78 text (disabled) Include Median ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.geometry_group.QLabel
+															79 combo box (disabled, settable, string) Geometric Details Value: No ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.geometry_group.geometry.include_median
+															80 text (disabled) Footpath ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.geometry_group.QLabel
+															81 combo box (disabled, settable, string) Geometric Details Value: None ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.geometry_group.geometry.footpath
+															82 text (disabled) Skew Angle (deg) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.geometry_group.QLabel
+															83 text field (edit) (disabled, settable, string) Geometric Details Value: 0 ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.geometry_group.geometry.skew_angle
+														84 group (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.additonal_geometry_group
+															85 text (disabled) Additional Geometry ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.additonal_geometry_group.QLabel
+															86 button (disabled, settable, string) Modify Here ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.additonal_geometry_group.geometry.additional_btn
+														87 group (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.design_type_group
+															88 text (disabled) Design Type* ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.design_type_group.QLabel
+															89 combo box (disabled, settable, string) Value: Optimized ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.design_type_group.geometry.design_mode
+														90 group (disabled, settable, string) Material Inputs ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group
+															91 text (disabled) Girder ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QLabel
+															92 group (disabled, settable, string) Material Inputs ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QWidget
+																93 combo box (disabled, settable, string) Value: custom_steel_355_510 ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QWidget.material.girder
+																94 button (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QWidget.QToolButton
+															95 text (disabled) Cross Bracing ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QLabel
+															96 group (disabled, settable, string) Material Inputs ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QWidget
+																97 combo box (disabled, settable, string) Value: custom_steel_355_510 ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QWidget.material.cross_bracing
+																98 button (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QWidget.QToolButton
+															99 text (disabled) End Diaphragm ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QLabel
+															100 group (disabled, settable, string) Material Inputs ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QWidget
+																101 combo box (disabled, settable, string) Value: custom_steel_355_510 ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QWidget.material.end_diaphragm
+																102 button (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QWidget.QToolButton
+															103 text (disabled) Deck ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QLabel
+															104 group (disabled, settable, string) Material Inputs ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QWidget
+																105 combo box (disabled, settable, string) Value: custom_concrete_45_3.5 ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QWidget.material.deck
+																106 button (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.material_group.QWidget.QToolButton
+										107 group (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_vcontainer
+											108 scroll bar (disabled, settable, float) Value: 215 ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_vcontainer.QScrollBar
+									109 button (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.dock_custom_button
+										110 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.dock_custom_button.button_icon
+										111 text Save Input ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.dock_custom_button.button_label
+									112 button (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.dock_custom_button
+										113 group (disabled, settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.dock_custom_button.button_icon
+										114 text (disabled) Design ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.dock_custom_button.button_label
+					115 group (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget
+						116 button (settable, string) ❮ ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QPushButton
+				117 thumb (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.qt_splithandle_
+				361 thumb (settable, string) ID: QApplication.CustomWindow.QWidget.QSplitter.qt_splithandle_
+		1 window (settable, string) python Secondary Actions: Raise ID: QApplication.NavCubeOverlay
+		609 window (settable, string) python Secondary Actions: Raise ID: QApplication.AxisTriadOverlay
+
+Document text: ```
+0
+```
+
+Focused element: 75 text field (edit) (disabled, settable, string) Geometric Details Value: 30 ID: QApplication.CustomWindow.QWidget.QSplitter.InputDock.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QScrollArea.qt_scrollarea_viewport.QWidget.QGroupBox.QFrame.section.geometry_group.geometry.span
+
+Document text:
+0

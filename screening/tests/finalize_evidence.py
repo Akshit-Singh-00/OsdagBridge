@@ -1,0 +1,83 @@
+"""Update the evidence index and copy only public artifacts into the fork."""
+import json, shutil, subprocess, sys
+from pathlib import Path
+from zipfile import ZipFile
+ROOT=Path(__file__).resolve().parents[1]
+readme='''# OsdagBridge screening evidence — Akshit Singh
+
+FOSSEE Winter Internship 2026, Software Testing & Issue Reporting.
+Original source: `Nidhikhare12/OsdagBridge`, `dev` at `d74f56dd7f22925fb8148cabf5740ed8d1e39ff3`.
+
+## Executed work
+
+- Original validation: 72 checks, 46 pass / 26 expectation mismatches.
+- Layout/state: 21 checks, 11 pass / 10 mismatches.
+- Separate proposed validation repair: 72/72 pass; original source restored byte for byte.
+- Four original-backend design attempts: default E350A raises missing Gs; custom 20/25/30 m designs complete.
+- Three consecutive **desktop** designs in one session, with unlock and fresh changed-span OSI import: all complete and CAD shows 20/25/30 m.
+- Every compared basic-geometry/material fixture field matches the captured desktop design-call input.
+- Sampled desktop comparison: 15 deck matches, four cross-bracing matches; End Diaphragm incorrectly displays cross-bracing results despite empty own backend results (existing issue #72).
+- Native CAD topology checks and 12 exported structural plots; actual desktop CAD/component/plot captures.
+
+Completed calculation does not mean structural design pass. Fatigue utilization exceeds 100%; no independent structural certification is claimed. Input fixtures were imported freshly between GUI runs; direct span editing with stale segment tables is covered separately by the state checks.
+
+## Main artifacts
+
+- `output/pdf/OsdagBridge_Testing_Report.pdf`: 13-page report, exact cases, comparisons, failures, repair suggestions and limitations.
+- `evidence/desktop/`: three original design-call input/output records, comparison JSON, screenshots and native accessibility observations.
+- `evidence/designs-verified/`: separate backend attempts, component dictionaries, CAD checks and plots.
+- `submission/fixes/validation-proposal.patch`: tested proposed repair, not applied to upstream source.
+- `submission/issue-comment-drafts.json`: unposted draft follow-up evidence. Existing issue URLs in the report identify duplicates; no claim of new unique bugs.
+- `video/OsdagBridge_Demonstration.mp4`: silent 2-minute walkthrough of genuine captured desktop key frames, with pauses omitted. It is explicitly labelled and is not a continuous real-time screencast.
+
+Resume and private submission ZIP are intentionally excluded from this public repository.
+
+## Reproduction
+
+Copy this screening folder outside the repository, then clone the pinned source as its child `OsdagBridge`:
+
+```powershell
+git clone --branch dev https://github.com/Nidhikhare12/OsdagBridge.git OsdagBridge
+git -C OsdagBridge checkout d74f56dd7f22925fb8148cabf5740ed8d1e39ff3
+python tests/run_validation.py
+python tests/run_state_checks.py
+python tests/check_validation_proposal.py
+```
+
+The first two scripts intentionally return exit code 1 for reproduced expectation mismatches. The proposal runner temporarily edits two files and restores original bytes in `finally`. Do not concurrently edit those files.
+
+For full designs, install the official project environment with PySide6 6.9.3 and use its Python for `tests/runtime_probe.py` and `tests/run_designs.py`. Our runtime uses Python 3.12.13; all 14 dependency imports pass. Exact environment/package versions accompany the evidence. `tests/launch_observed_desktop.py` launches the genuine UI with a before/after observer; UI operation was separate. An initial unguarded multiprocessing run was invalidated and excluded. Accepted full-design evidence is only in `designs-verified`.
+
+## Scope and review
+
+This is AI-assisted test scripting, desktop operation and documentation prepared for the candidate to review and understand. UI comparisons are sampled, not exhaustive. No independent engineering verification or generated LaTeX report comparison was completed. Displayed component PASS labels and engineering warnings are preserved as observed rather than endorsed.
+
+Official internship: https://fossee.in/winter-internship/2026
+
+Task brief: https://docs.google.com/document/d/1eJAVX6PR0Za40EkdbZvILJI1vuF-uvA0/edit
+'''
+(ROOT/'README.md').write_text(readme,encoding='utf-8')
+plan=json.loads((ROOT/'submission/test-plan.json').read_text())
+plan.update(status='testing_and_artifacts_prepared',blocker=None)
+states={'TC01':'desktop_launched_required_blank_field_design_not_tested','TC04':'three_consecutive_desktop_unlock_import_reruns_completed',
+        'TC07':'sampled_deck_and_transverse_ui_compared_diaphagm_mismatch','TC08':'native_and_desktop_cad_plots_inspected',
+        'TC09':'sampled_desktop_output_comparison_completed_latex_report_not_compared'}
+for c in plan['cases']:
+    if c['id'] in states:c['status']=states[c['id']]
+plan['completed_checks']['desktop_designs']={'completed':3,'error':0,'source':'evidence/desktop/comparison.json'}
+(ROOT/'submission/test-plan.json').write_text(json.dumps(plan,indent=2),encoding='utf-8')
+old=ROOT/'evidence/desktop/ui-import-observations.json'
+if old.exists():
+    data=json.loads(old.read_text());data['superseded_by']='comparison.json and ui-comparison.json; three desktop designs now completed'
+    old.write_text(json.dumps(data,indent=2),encoding='utf-8')
+subprocess.run([sys.executable,str(ROOT/'tests/package_evidence.py')],check=True)
+target=ROOT/'OsdagBridge/screening'
+with ZipFile(ROOT/'output/OsdagBridge_Evidence.zip') as z:z.extractall(target)
+stale=target/'output/pdf/OsdagBridge_Interim_Testing_Report.pdf'
+if stale.exists():stale.unlink()
+(target/'video').mkdir(exist_ok=True)
+shutil.copy2('D:/Fossee-runtime/submission/OsdagBridge_Demonstration.mp4',target/'video/OsdagBridge_Demonstration.mp4')
+import hashlib
+paths=[p for p in target.rglob('*') if p.is_file() and p.name not in ('manifest.json','.gitattributes')]
+(target/'submission/manifest.json').write_text(json.dumps({'status':'executed_evidence_candidate_review','sha256':{p.relative_to(target).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}},indent=2),encoding='utf-8')
+print('Public screening files:',len(paths))

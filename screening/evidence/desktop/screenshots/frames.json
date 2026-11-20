@@ -1,0 +1,97 @@
+[
+  {
+    "file": "01-loaded20.png",
+    "caption": "20 m case imported: 7.5 m carriageway and four girders",
+    "time": "2026-11-20T13:04:11.315Z"
+  },
+  {
+    "file": "02-location-not-restored.png",
+    "caption": "Import observation: project-location dialog opens without the saved state/district",
+    "time": "2026-11-20T13:04:28.214Z"
+  },
+  {
+    "file": "03-bhopal-weather.png",
+    "caption": "Bhopal (Bairagarh), Madhya Pradesh: location selected explicitly",
+    "time": "2026-11-20T13:05:14.128Z"
+  },
+  {
+    "file": "04-custom-grades.png",
+    "caption": "Custom steel and concrete grades restored from the saved input",
+    "time": "2026-11-20T13:05:38.278Z"
+  },
+  {
+    "file": "05-custom-steel-input.png",
+    "caption": "Custom steel entered in the desktop: density 80, Fy 355, Fu 510, E 210, G 80.8",
+    "time": "2026-11-20T13:06:40.313Z"
+  },
+  {
+    "file": "06-custom-concrete-input.png",
+    "caption": "Custom concrete: density 24, fck 45, fctm 3.5, Ecm 35, thermal coefficient 10",
+    "time": "2026-11-20T13:08:33.688Z"
+  },
+  {
+    "file": "07-cad20.png",
+    "caption": "Run 1 completed: 20 m bridge; 8.40 m overall width; 250 mm deck.",
+    "time": "2026-11-20T13:11:30.682Z"
+  },
+  {
+    "file": "08-girders20.png",
+    "caption": "20 m run: girder and stiffener geometry inspected in desktop CAD.",
+    "time": "2026-11-20T13:11:51.291Z"
+  },
+  {
+    "file": "09-bracing20.png",
+    "caption": "20 m run: cross-bracing CAD isolated for inspection.",
+    "time": "2026-11-20T13:12:03.888Z"
+  },
+  {
+    "file": "10-unlocked25.png",
+    "caption": "Unlocked the same desktop session, cleared results and imported the 25 m case.",
+    "time": "2026-11-20T13:12:39.244Z"
+  },
+  {
+    "file": "11-cad25.png",
+    "caption": "Run 2 completed in the same session: CAD span updates to 25.00 m.",
+    "time": "2026-11-20T13:13:23.686Z"
+  },
+  {
+    "file": "12-unlocked30.png",
+    "caption": "Unlocked again and imported the 30 m case with the same custom grades.",
+    "time": "2026-11-20T13:13:41.161Z"
+  },
+  {
+    "file": "13-running30.png",
+    "caption": "Third desktop run: original solver advances through analysis and member design.",
+    "time": "2026-11-20T13:14:18.219Z"
+  },
+  {
+    "file": "14-cad30.png",
+    "caption": "Run 3 completed: bridge CAD shows span 30.00 m, width 8.40 m and deck 250 mm.",
+    "time": "2026-11-20T13:14:33.875Z"
+  },
+  {
+    "file": "15-deck-summary.png",
+    "caption": "30 m case: actual deck design summary and displayed section inputs.",
+    "time": "2026-11-20T13:14:46.735Z"
+  },
+  {
+    "file": "16-crossbracing-summary.png",
+    "caption": "Cross-bracing summary: G1-G2, nine X-braces and 40 x 40 x 3 double angles.",
+    "time": "2026-11-20T13:15:21.126Z"
+  },
+  {
+    "file": "17-enddiaphragm-summary.png",
+    "caption": "End-diaphragm summary: two members; X-Bracing field but V-shaped preview (observation).",
+    "time": "2026-11-20T13:15:28.433Z"
+  },
+  {
+    "file": "18-shear-plot30.png",
+    "caption": "30 m desktop shear-force diagram for self-weight (SW).",
+    "time": "2026-11-20T13:15:59.004Z"
+  },
+  {
+    "file": "19-moment-plot30.png",
+    "caption": "30 m desktop plot selection changes to the displayed Tx moment diagram for SW.",
+    "time": "2026-11-20T13:16:14.468Z"
+  }
+]

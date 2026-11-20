@@ -1,0 +1,13 @@
+Additional reproduction on Windows, upstream dev at d74f56dd7f22925fb8148cabf5740ed8d1e39ff3, with three consecutive desktop designs (20, 25, 30 m) in the same session. The UI was unlocked and fresh changed-span OSI inputs imported between designs. The original design method was observed before/after; solver results were not replaced.
+
+In the 30 m run, G1-G2 / Envelope, Crossbracing shows utilization ratios 0.100 / 0.460 / 0.080 / 0.380 for diagonal tension/compression and chord tension/compression. These match crossbracing_design_results. End Diaphragm repeats the same four ratios and PASS labels under E1M1/E1M2, while end_diaphragm_design_results["G1-G2"] is empty. All three diaphragm pair entries are empty in this case. Thus an unavailable result is presented as a passing cross-bracing result.
+
+Exact configuration: Highway Bridge; Bhopal (Bairagarh), Madhya Pradesh; span 30 m; carriageway 7.5 m; zero skew; no median or footpath; Optimized; four girders; custom_steel_355_510 for girder/cross-bracing/end-diaphragm and custom_concrete_45_3.5 for deck. Full OSI and dictionary evidence:
+https://github.com/Akshit-Singh-00/OsdagBridge/tree/codex/fossee-screening-evidence/screening/evidence/desktop/run-03
+
+Native accessibility captures and screenshots:
+https://github.com/Akshit-Singh-00/OsdagBridge/tree/codex/fossee-screening-evidence/screening/evidence/desktop/screenshots
+
+Suggested fix (not applied): in src/osdagbridge/desktop/ui/dialogs/transverse_member_design.py::_try_load_data (near lines 893-944), route each tab exclusively to its own component result dictionary. If diaphragm results are empty, show unavailable/failed computation rather than falling back to the cross-bracing dictionary. Keep matching member, demand, capacity and utilization together.
+
+This is additional evidence for the existing issue, not a new bug claim. Prepared with AI-assisted testing and documentation. Successful calculation is separate from engineering pass/fail; fatigue checks in these designs do fail.

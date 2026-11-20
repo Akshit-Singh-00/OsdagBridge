@@ -14,5 +14,6 @@
     "deck_grade": "custom_concrete_45_3.5"
   },
   "design_executed": false,
-  "recording_started": false
+  "recording_started": false,
+  "superseded_by": "comparison.json and ui-comparison.json; three desktop designs now completed"
 }

@@ -1,11 +1,13 @@
 {
   "fork_url": "https://github.com/Akshit-Singh-00/OsdagBridge",
   "upstream": "https://github.com/Nidhikhare12/OsdagBridge",
-  "artifact_publication": "published_interim_evidence",
+  "artifact_publication": "prepared_desktop_evidence",
   "issue_comments": "not_posted",
-  "collaborator_invitation": "not_sent",
+  "collaborator_invitation": "sent_pending_acceptance",
   "evidence_branch": "codex/fossee-screening-evidence",
-  "evidence_commit": "4102c0d6a6074aff689844e70c5e8e318a2eac5e",
   "evidence_url": "https://github.com/Akshit-Singh-00/OsdagBridge/tree/codex/fossee-screening-evidence/screening",
-  "resume_in_public_repository": false
+  "resume_in_public_repository": false,
+  "previous_interim_commit": "ec3841e879873574f7cf589f584dc3475088138f",
+  "video_url": "https://github.com/Akshit-Singh-00/OsdagBridge/blob/codex/fossee-screening-evidence/screening/video/OsdagBridge_Demonstration.mp4",
+  "invitation_id": 345178155
 }

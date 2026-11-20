@@ -1,0 +1,708 @@
+{
+  "method": "Actual desktop design-call input/output audit; no solver mocks",
+  "runs": [
+    {
+      "run": "run-01",
+      "status": "COMPLETED",
+      "span_m": 20,
+      "fixture_checks": [
+        {
+          "key": "geometry.carriageway_width",
+          "expected": 7.5,
+          "actual": 7.5,
+          "match": true
+        },
+        {
+          "key": "geometry.design_mode",
+          "expected": "Optimized",
+          "actual": "Optimized",
+          "match": true
+        },
+        {
+          "key": "geometry.footpath",
+          "expected": "None",
+          "actual": "None",
+          "match": true
+        },
+        {
+          "key": "geometry.include_median",
+          "expected": "No",
+          "actual": "No",
+          "match": true
+        },
+        {
+          "key": "geometry.skew_angle",
+          "expected": 0,
+          "actual": 0,
+          "match": true
+        },
+        {
+          "key": "geometry.span",
+          "expected": 20,
+          "actual": 20,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing",
+          "expected": "custom_steel_355_510",
+          "actual": "custom_steel_355_510",
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.density",
+          "expected": 80.0,
+          "actual": 80,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.e",
+          "expected": 210.0,
+          "actual": 210,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.fu",
+          "expected": 510.0,
+          "actual": 510,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.fy",
+          "expected": 355.0,
+          "actual": 355,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.g",
+          "expected": 80.8,
+          "actual": 80.8,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.poisson",
+          "expected": 0.3,
+          "actual": 0.3,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.thermal",
+          "expected": 12.0,
+          "actual": 12,
+          "match": true
+        },
+        {
+          "key": "material.deck",
+          "expected": "custom_concrete_45_3.5",
+          "actual": "custom_concrete_45_3.5",
+          "match": true
+        },
+        {
+          "key": "material.deck.density",
+          "expected": 24.0,
+          "actual": 24,
+          "match": true
+        },
+        {
+          "key": "material.deck.ecm",
+          "expected": 35.0,
+          "actual": 35,
+          "match": true
+        },
+        {
+          "key": "material.deck.fck",
+          "expected": 45.0,
+          "actual": 45,
+          "match": true
+        },
+        {
+          "key": "material.deck.fctm",
+          "expected": 3.5,
+          "actual": 3.5,
+          "match": true
+        },
+        {
+          "key": "material.deck.thermal",
+          "expected": 10.0,
+          "actual": 10,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm",
+          "expected": "custom_steel_355_510",
+          "actual": "custom_steel_355_510",
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.density",
+          "expected": 80.0,
+          "actual": 80,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.e",
+          "expected": 210.0,
+          "actual": 210,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.fu",
+          "expected": 510.0,
+          "actual": 510,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.fy",
+          "expected": 355.0,
+          "actual": 355,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.g",
+          "expected": 80.8,
+          "actual": 80.8,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.poisson",
+          "expected": 0.3,
+          "actual": 0.3,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.thermal",
+          "expected": 12.0,
+          "actual": 12,
+          "match": true
+        },
+        {
+          "key": "material.girder",
+          "expected": "custom_steel_355_510",
+          "actual": "custom_steel_355_510",
+          "match": true
+        },
+        {
+          "key": "material.girder.density",
+          "expected": 80.0,
+          "actual": 80,
+          "match": true
+        },
+        {
+          "key": "material.girder.e",
+          "expected": 210.0,
+          "actual": 210,
+          "match": true
+        },
+        {
+          "key": "material.girder.fu",
+          "expected": 510.0,
+          "actual": 510,
+          "match": true
+        },
+        {
+          "key": "material.girder.fy",
+          "expected": 355.0,
+          "actual": 355,
+          "match": true
+        },
+        {
+          "key": "material.girder.g",
+          "expected": 80.8,
+          "actual": 80.8,
+          "match": true
+        },
+        {
+          "key": "material.girder.poisson",
+          "expected": 0.3,
+          "actual": 0.3,
+          "match": true
+        },
+        {
+          "key": "material.girder.thermal",
+          "expected": 12.0,
+          "actual": 12,
+          "match": true
+        }
+      ],
+      "output_span_matches_input": true,
+      "utilization": {
+        "util.flexure": 24.64,
+        "util.shear": 33.43,
+        "util.interaction": 24.87,
+        "util.ltb": 20.46,
+        "util.long_trans_shear": 23.990000000000002,
+        "util.fatigue": 221.51999999999998,
+        "util.stress_limitation": 33.87,
+        "util.deflection_crack": 61.47
+      }
+    },
+    {
+      "run": "run-02",
+      "status": "COMPLETED",
+      "span_m": 25,
+      "fixture_checks": [
+        {
+          "key": "geometry.carriageway_width",
+          "expected": 7.5,
+          "actual": 7.5,
+          "match": true
+        },
+        {
+          "key": "geometry.design_mode",
+          "expected": "Optimized",
+          "actual": "Optimized",
+          "match": true
+        },
+        {
+          "key": "geometry.footpath",
+          "expected": "None",
+          "actual": "None",
+          "match": true
+        },
+        {
+          "key": "geometry.include_median",
+          "expected": "No",
+          "actual": "No",
+          "match": true
+        },
+        {
+          "key": "geometry.skew_angle",
+          "expected": 0,
+          "actual": 0,
+          "match": true
+        },
+        {
+          "key": "geometry.span",
+          "expected": 25,
+          "actual": 25,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing",
+          "expected": "custom_steel_355_510",
+          "actual": "custom_steel_355_510",
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.density",
+          "expected": 80.0,
+          "actual": 80,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.e",
+          "expected": 210.0,
+          "actual": 210,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.fu",
+          "expected": 510.0,
+          "actual": 510,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.fy",
+          "expected": 355.0,
+          "actual": 355,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.g",
+          "expected": 80.8,
+          "actual": 80.8,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.poisson",
+          "expected": 0.3,
+          "actual": 0.3,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.thermal",
+          "expected": 12.0,
+          "actual": 12,
+          "match": true
+        },
+        {
+          "key": "material.deck",
+          "expected": "custom_concrete_45_3.5",
+          "actual": "custom_concrete_45_3.5",
+          "match": true
+        },
+        {
+          "key": "material.deck.density",
+          "expected": 24.0,
+          "actual": 24,
+          "match": true
+        },
+        {
+          "key": "material.deck.ecm",
+          "expected": 35.0,
+          "actual": 35,
+          "match": true
+        },
+        {
+          "key": "material.deck.fck",
+          "expected": 45.0,
+          "actual": 45,
+          "match": true
+        },
+        {
+          "key": "material.deck.fctm",
+          "expected": 3.5,
+          "actual": 3.5,
+          "match": true
+        },
+        {
+          "key": "material.deck.thermal",
+          "expected": 10.0,
+          "actual": 10,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm",
+          "expected": "custom_steel_355_510",
+          "actual": "custom_steel_355_510",
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.density",
+          "expected": 80.0,
+          "actual": 80,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.e",
+          "expected": 210.0,
+          "actual": 210,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.fu",
+          "expected": 510.0,
+          "actual": 510,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.fy",
+          "expected": 355.0,
+          "actual": 355,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.g",
+          "expected": 80.8,
+          "actual": 80.8,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.poisson",
+          "expected": 0.3,
+          "actual": 0.3,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.thermal",
+          "expected": 12.0,
+          "actual": 12,
+          "match": true
+        },
+        {
+          "key": "material.girder",
+          "expected": "custom_steel_355_510",
+          "actual": "custom_steel_355_510",
+          "match": true
+        },
+        {
+          "key": "material.girder.density",
+          "expected": 80.0,
+          "actual": 80,
+          "match": true
+        },
+        {
+          "key": "material.girder.e",
+          "expected": 210.0,
+          "actual": 210,
+          "match": true
+        },
+        {
+          "key": "material.girder.fu",
+          "expected": 510.0,
+          "actual": 510,
+          "match": true
+        },
+        {
+          "key": "material.girder.fy",
+          "expected": 355.0,
+          "actual": 355,
+          "match": true
+        },
+        {
+          "key": "material.girder.g",
+          "expected": 80.8,
+          "actual": 80.8,
+          "match": true
+        },
+        {
+          "key": "material.girder.poisson",
+          "expected": 0.3,
+          "actual": 0.3,
+          "match": true
+        },
+        {
+          "key": "material.girder.thermal",
+          "expected": 12.0,
+          "actual": 12,
+          "match": true
+        }
+      ],
+      "output_span_matches_input": true,
+      "utilization": {
+        "util.flexure": 23.14,
+        "util.shear": 53.480000000000004,
+        "util.interaction": 23.330000000000002,
+        "util.ltb": 18.83,
+        "util.long_trans_shear": 25.430000000000003,
+        "util.fatigue": 199.85,
+        "util.stress_limitation": 31.05,
+        "util.deflection_crack": 51.99
+      }
+    },
+    {
+      "run": "run-03",
+      "status": "COMPLETED",
+      "span_m": 30,
+      "fixture_checks": [
+        {
+          "key": "geometry.carriageway_width",
+          "expected": 7.5,
+          "actual": 7.5,
+          "match": true
+        },
+        {
+          "key": "geometry.design_mode",
+          "expected": "Optimized",
+          "actual": "Optimized",
+          "match": true
+        },
+        {
+          "key": "geometry.footpath",
+          "expected": "None",
+          "actual": "None",
+          "match": true
+        },
+        {
+          "key": "geometry.include_median",
+          "expected": "No",
+          "actual": "No",
+          "match": true
+        },
+        {
+          "key": "geometry.skew_angle",
+          "expected": 0,
+          "actual": 0,
+          "match": true
+        },
+        {
+          "key": "geometry.span",
+          "expected": 30,
+          "actual": 30,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing",
+          "expected": "custom_steel_355_510",
+          "actual": "custom_steel_355_510",
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.density",
+          "expected": 80.0,
+          "actual": 80,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.e",
+          "expected": 210.0,
+          "actual": 210,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.fu",
+          "expected": 510.0,
+          "actual": 510,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.fy",
+          "expected": 355.0,
+          "actual": 355,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.g",
+          "expected": 80.8,
+          "actual": 80.8,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.poisson",
+          "expected": 0.3,
+          "actual": 0.3,
+          "match": true
+        },
+        {
+          "key": "material.cross_bracing.thermal",
+          "expected": 12.0,
+          "actual": 12,
+          "match": true
+        },
+        {
+          "key": "material.deck",
+          "expected": "custom_concrete_45_3.5",
+          "actual": "custom_concrete_45_3.5",
+          "match": true
+        },
+        {
+          "key": "material.deck.density",
+          "expected": 24.0,
+          "actual": 24,
+          "match": true
+        },
+        {
+          "key": "material.deck.ecm",
+          "expected": 35.0,
+          "actual": 35,
+          "match": true
+        },
+        {
+          "key": "material.deck.fck",
+          "expected": 45.0,
+          "actual": 45,
+          "match": true
+        },
+        {
+          "key": "material.deck.fctm",
+          "expected": 3.5,
+          "actual": 3.5,
+          "match": true
+        },
+        {
+          "key": "material.deck.thermal",
+          "expected": 10.0,
+          "actual": 10,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm",
+          "expected": "custom_steel_355_510",
+          "actual": "custom_steel_355_510",
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.density",
+          "expected": 80.0,
+          "actual": 80,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.e",
+          "expected": 210.0,
+          "actual": 210,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.fu",
+          "expected": 510.0,
+          "actual": 510,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.fy",
+          "expected": 355.0,
+          "actual": 355,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.g",
+          "expected": 80.8,
+          "actual": 80.8,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.poisson",
+          "expected": 0.3,
+          "actual": 0.3,
+          "match": true
+        },
+        {
+          "key": "material.end_diaphragm.thermal",
+          "expected": 12.0,
+          "actual": 12,
+          "match": true
+        },
+        {
+          "key": "material.girder",
+          "expected": "custom_steel_355_510",
+          "actual": "custom_steel_355_510",
+          "match": true
+        },
+        {
+          "key": "material.girder.density",
+          "expected": 80.0,
+          "actual": 80,
+          "match": true
+        },
+        {
+          "key": "material.girder.e",
+          "expected": 210.0,
+          "actual": 210,
+          "match": true
+        },
+        {
+          "key": "material.girder.fu",
+          "expected": 510.0,
+          "actual": 510,
+          "match": true
+        },
+        {
+          "key": "material.girder.fy",
+          "expected": 355.0,
+          "actual": 355,
+          "match": true
+        },
+        {
+          "key": "material.girder.g",
+          "expected": 80.8,
+          "actual": 80.8,
+          "match": true
+        },
+        {
+          "key": "material.girder.poisson",
+          "expected": 0.3,
+          "actual": 0.3,
+          "match": true
+        },
+        {
+          "key": "material.girder.thermal",
+          "expected": 12.0,
+          "actual": 12,
+          "match": true
+        }
+      ],
+      "output_span_matches_input": true,
+      "utilization": {
+        "util.flexure": 19.07,
+        "util.shear": 40.03,
+        "util.interaction": 19.21,
+        "util.ltb": 21.77,
+        "util.long_trans_shear": 21.36,
+        "util.fatigue": 157.7,
+        "util.stress_limitation": 24.59,
+        "util.deflection_crack": 43.56
+      }
+    }
+  ],
+  "completed": 3
+}
