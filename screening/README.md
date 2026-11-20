@@ -50,3 +50,7 @@ This is AI-assisted test scripting, desktop operation and documentation prepared
 Official internship: https://fossee.in/winter-internship/2026
 
 Task brief: https://docs.google.com/document/d/1eJAVX6PR0Za40EkdbZvILJI1vuF-uvA0/edit
+
+Live additional-evidence comment: https://github.com/Nidhikhare12/OsdagBridge/issues/72#issuecomment-7040686132
+
+Mentor Nidhikhare12 was invited as a collaborator with write permission; acceptance is pending.

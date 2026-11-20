@@ -56,6 +56,7 @@ Official internship: https://fossee.in/winter-internship/2026
 
 Task brief: https://docs.google.com/document/d/1eJAVX6PR0Za40EkdbZvILJI1vuF-uvA0/edit
 '''
+readme += '\nLive additional-evidence comment: https://github.com/Nidhikhare12/OsdagBridge/issues/72#issuecomment-7040686132\n\nMentor Nidhikhare12 was invited as a collaborator with write permission; acceptance is pending.\n'
 (ROOT/'README.md').write_text(readme,encoding='utf-8')
 plan=json.loads((ROOT/'submission/test-plan.json').read_text())
 plan.update(status='testing_and_artifacts_prepared',blocker=None)

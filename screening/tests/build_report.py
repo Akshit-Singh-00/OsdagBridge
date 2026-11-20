@@ -101,7 +101,7 @@ for title, observation, repair, issue_nums in findings:
     story.append(KeepTogether([p(title, "Heading2"), p(observation), p("<b>Cause / repair:</b> " + repair),
                                p("<b>Related existing issues:</b> " + ", ".join(f"<link href='https://github.com/Nidhikhare12/OsdagBridge/issues/{n.strip()}'>#{n.strip()}</link>" for n in issue_nums.split(",")))]))
 add("Duplicate review", "Heading2")
-add("Open and closed upstream issues were read on 20 November 2026. Links above identify overlap; no new issue or comment has been posted. The fractional-count result is retained as additional evidence, without asserting novelty.")
+add("Open and closed upstream issues were read on 20 November 2026. Links identify overlap; no duplicate new issue was opened. Additional desktop evidence was posted to existing <link href='https://github.com/Nidhikhare12/OsdagBridge/issues/72#issuecomment-7040686132'>issue #72 (candidate comment)</link>. Other comment drafts remain unposted. The fractional-count result is retained without asserting novelty.")
 story.append(PageBreak())
 
 add("Full design and native CAD results", "Heading1")
